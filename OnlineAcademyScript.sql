@@ -18,7 +18,7 @@ CREATE TABLE Users(
 	lastName varchar (255) NOT NULL,
 	email  varchar(255),
     clientPass  varchar(255),
-    primary key(clientID)
+    primary key(userID)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE  Orders(
@@ -27,13 +27,13 @@ CREATE TABLE  Orders(
     userIDfk integer NOT NULL,
 	totalPrice long,
     primary key(orderID),
-    foreign key(userIDfk) references Clients (userID) ON DELETE restrict ON UPDATE CASCADE
+    foreign key(userIDfk) references Users (userID) ON DELETE restrict ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE OrderDetails(
 	courseIDfk integer NOT NULL,
 	orderIDfk integer NOT NULL,
-    PRIMARY KEY (bookIDfk,orderIDFK),
-    foreign key(courseIDfk) references Books (courseID) ON DELETE restrict ON UPDATE CASCADE,
+    PRIMARY KEY (courseIDfk,orderIDfk),
+    foreign key(courseIDfk) references Courses (courseID) ON DELETE restrict ON UPDATE CASCADE,
     foreign key(orderIDfk) references Orders (orderID) ON DELETE restrict ON UPDATE CASCADE
 )ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
