@@ -39,6 +39,22 @@ CREATE TABLE OrderDetails(
     foreign key(orderIDfk) references Orders (orderID) ON DELETE restrict ON UPDATE CASCADE
 )ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
+CREATE TABLE ShoppingCart(
+	cartID integer NOT NULL,
+    cartDate date NOT NULL,
+    userIDfk integer NOT NULL,
+    primary key(orderID),
+    foreign key(userIDfk) references Users (userID) ON DELETE restrict ON UPDATE CASCADE
+)ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+CREATE TABLE ShoppingCartDetails(
+	courseIDfk integer NOT NULL,
+	cartIDfk integer NOT NULL,
+    PRIMARY KEY (courseIDfk,cartIDfk),
+    foreign key(courseIDfk) references Courses (courseID) ON DELETE restrict ON UPDATE CASCADE,
+    foreign key(cartIDfk) references Orders (cartID) ON DELETE restrict ON UPDATE CASCADE
+)ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
 INSERT INTO Courses(courseID, title, teacher, courseDes, rate, category, imgName, price) VALUES
 (1,'Cuaderno artístico para viajes imaginarios','Koi Samsa','Embárcate en un viaje imaginario lleno de creatividad e ilustra tus ideas, inquietudes, alegrías y sueños en un cuaderno artístico. Junto a la artista multidisciplinar Koi Samsa darás vida a un cuaderno único, mezclando el mundo plástico, visual y literario.', 5.0 ,'Ilustración','ff98a0fbbde6f54a3a2190a89d96330d.jpg',10.90),
 (2,'Crochet: crea prendas con una sola aguja','Alicia Recio Rodríguez','¿Quieres tejer con tus propias manos prendas a crochet, con diseños sencillos y llenos de color? Aprende junto a Alicia —más conocida como Alimaravillas—, una diseñadora de crochet nórdico y yarnbomber que triunfa en las redes sociales con sus diseños minimal de estilo entre hipster y nórdico, que te guiará para que puedas materializar esa prenda que siempre imaginaste, a golpe de ganchillo.',4.9,'Punto','1aac6062574c2a85aadece2d87d78d0a.jpg',10.90),
