@@ -1,0 +1,12 @@
+.nav {
+  @extend %Dflex-row-start;
+  .nav__list {
+    @extend %Dflex-row-start;
+  }
+  .nav__item {
+    padding: 1em;
+  }
+}
+.collapse-submenu {
+  display: none;
+}

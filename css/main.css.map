@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "AAAA,QAAQ;ACAR,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CACb;;ADCD,WAAW;AWJX,ARKA,IQLI,EAAJ,IAAI,CAEF,UAAU,CRGK;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACpB;;AHED,cAAc;AAKd,UAAU;AWfV,AAKE,IALE,CAKF,UAAU,CAAC;EACT,OAAO,EAAE,GAAG;CACb;;AAEH,AAAA,iBAAiB,CAAC;EAChB,OAAO,EAAE,IAAI;CACd;;AXSD,QAAQ;AAKR,UAAU",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/base/_reset.scss",
+        "../sass/base/_typography.scss",
+        "../sass/abstract/_placeholder.scss",
+        "../sass/abstract/_animations.scss",
+        "../sass/abstract/_mixins.scss",
+        "../sass/abstract/_variable.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/components/_cards.scss",
+        "../sass/components/_icons.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_nav.scss",
+        "../sass/layout/_sections.scss",
+        "../sass/pages/_landing.scss",
+        "../sass/pages/_login.scss",
+        "../sass/pages/_signup.scss",
+        "../sass/themes/_themes.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

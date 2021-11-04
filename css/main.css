@@ -1,0 +1,30 @@
+/*Base*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Abstrac*/
+.nav, .nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*Components*/
+/*Layout*/
+.nav .nav__item {
+  padding: 1em;
+}
+
+.collapse-submenu {
+  display: none;
+}
+
+/*Page*/
+/*Themes*/
+/*# sourceMappingURL=main.css.map */
