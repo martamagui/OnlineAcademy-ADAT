@@ -1,12 +1,19 @@
 .nav {
-  @extend %Dflex-row-start;
+  @extend %Dflex-row-spbwt-center;
+  background-color: aqua;
   .nav__list {
-    @extend %Dflex-row-start;
-  }
-  .nav__item {
-    padding: 1em;
+    @extend %Dflex-row-spbwt-center;
+    .nav__item {
+      padding: 1em;
+      list-style-type: none;
+    }
+    #nav-shopping-cart-img{
+      width: 2em;
+    }
+    
   }
 }
+
 .collapse-submenu {
   display: none;
 }

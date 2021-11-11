@@ -1,0 +1,23 @@
+.footer, main{
+    background-color: $web-bg;
+}
+.nav{
+    background-color: $nav__bg;
+    color: $white;
+    a{
+        list-style: none;
+        color: $white;
+    }
+    
+}
+.banner{
+    background-color: $white;
+}
+.button-dark{
+    background-color: $btn_dark;
+    color: $white;
+}
+.button-light{
+    color: $btn_dark;
+    background-color: $web-bg;
+}

@@ -1,0 +1,17 @@
+.banner{
+    @extend %Dflex-row-center-middle;
+    padding: 5vh;
+    .banner__column{
+        width: 28vw;
+        @extend %Dflex-col-start;
+        .banner__item{
+            padding: 1vw;
+        }
+        img{
+            width: 20vw;
+        }
+        h2{
+            display: inline-block;
+        }
+    }
+}
