@@ -28,15 +28,15 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav__item " id="nav-shopping-cart">
-                    <a href="php/shopingCart.php" id="shopping-cart"><img id="nav-shopping-cart-img"src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" /></a>
-                </li>
                 <li class="nav__item" id="nav-experience">
                     
-                    <a href="php/login.php" id="login"><button class="button-dark">Entrar</button></a>
+                    <a href="php/login_form.php" id="login"><button class="button-dark basic__button">Entrar</button></a>
                 </li>
                 <li class="nav__item " id="nav-experience">
-                    <a href="php/signup.php" id="login"><button class="button-light">Crear cuenta</button></a>
+                    <a href="php/signup.php" id="login"><button class="button-light basic__button">Crear cuenta</button></a>
+                </li>
+                <li class="nav__item " id="nav-shopping-cart">
+                    <a href="php/shopingCart.php" id="shopping-cart"><img id="nav-shopping-cart-img"src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" /></a>
                 </li>
             </ul>
         </div>

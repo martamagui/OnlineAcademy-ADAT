@@ -11,7 +11,7 @@
         </div>
         <div class="column">
             <h3>Accede a tu cuenta</h3>
-            <a href="php/login.php" id="login">Login</a>
+            <a href="php/login_form.php" id="login">Login</a>
         </div>
         <div class="column">
             <h3>Contacto</h3>
