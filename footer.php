@@ -5,13 +5,13 @@
         <div class="column">
             <h3>Categorías</h3>
             <ul class="list"></ul>
-            <li class="list__item"><a href="#">Ilustración</a></li>
-            <li class="list__item"><a href="#">Punto y Bordado</a></li>
-            <li class="list__item"><a href="#">Reciclaje</a></li>
+            <li class="list__item"><a href="php/showCategory.php?value=Ilustracion">Ilustración</a></li>
+            <li class="list__item"><a href="php/showCategory.php?value=PuntoYBordado">Punto y Bordado</a></li>
+            <li class="list__item"><a href="php/showCategory.php?value=Reciclaje">Reciclaje</a></li>
         </div>
         <div class="column">
             <h3>Accede a tu cuenta</h3>
-            <a href="#" id="login">Login</a>
+            <a href="php/login.php" id="login">Login</a>
         </div>
         <div class="column">
             <h3>Contacto</h3>

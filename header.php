@@ -13,30 +13,30 @@
     <nav>
         <!--NavBar-->
         <div class="nav">
-            <div id="navName">
-                <span id="nav-name">OnlineCraftAcademy</span>
+            <div id="navName"> 
+                <a href="index.php"><span id="nav-name">OnlineCraftAcademy</span></a>
             </div>
             <ul class="nav__list" id="nav-list">
                 <li class="nav__item " id="nav-category">
-                    <a href="#about">Cursos</a>
+                    <a href="php/showCourses.php?category=All">Cursos</a>
                     <div class="nav__item collapse-submenu">
                         <p class="collapse__tiltle">Categorías</p>
                         <ul>
-                            <li class="collapse__item d-occult"><a href="#">Ilustración</a></li>
-                            <li class="collapse__item d-occult"><a href="#">Punto y Bordado</a></li>
-                            <li class="collapse__item d-occult"><a href="#">Reciclaje</a></li>
+                            <li class="collapse__item d-occult"><a href="php/showCategory.php?value=Ilustracion">Ilustración</a></li>
+                            <li class="collapse__item d-occult"><a href="php/showCategory.php?value=PuntoYBordado">Punto y Bordado</a></li>
+                            <li class="collapse__item d-occult"><a href="php/showCategory.php?value=Reciclaje">Reciclaje</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav__item " id="nav-shopping-cart">
-                    <a href="#" id="shopping-cart"><img id="nav-shopping-cart-img"src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" /></a>
+                    <a href="php/shopingCart.php" id="shopping-cart"><img id="nav-shopping-cart-img"src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" /></a>
                 </li>
                 <li class="nav__item" id="nav-experience">
                     
-                    <a href="#" id="login"><button class="button-dark">Entrar</button></a>
+                    <a href="php/login.php" id="login"><button class="button-dark">Entrar</button></a>
                 </li>
                 <li class="nav__item " id="nav-experience">
-                    <a href="#" id="login"><button class="button-light">Crear cuenta</button></a>
+                    <a href="php/signup.php" id="login"><button class="button-light">Crear cuenta</button></a>
                 </li>
             </ul>
         </div>
