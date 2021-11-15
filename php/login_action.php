@@ -7,7 +7,7 @@ require 'connection.php';
 
 $email = $_POST["email"];
 $clientPass = $_POST["password"];
-$sql = "SELECT * FROM  Users where email = '$category' and clientPass '$clientPass'";
+$sql = "SELECT * FROM  Users where email = '$email' and clientPass='$clientPass'";
 
 
 

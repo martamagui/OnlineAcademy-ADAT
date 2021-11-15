@@ -1,5 +1,6 @@
 /*Users*/
 INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('ana@gmail.com','Ana','Studdson','1234');
+SELECT * FROM  Users;
 
 /*Ilustración*/
 INSERT INTO Courses(title, teacher, courseDes, rate, category, imgName, price) VALUES
