@@ -71,7 +71,7 @@ main, .banner .banner__column {
 
 .basic__button {
   border: none;
-  min-width: 6.5vw;
+  min-width: 7vw;
   padding: 0.7vw;
 }
 
@@ -120,7 +120,7 @@ main {
 
 /*Themes*/
 .footer, main {
-  background-color: #F2F2F2;
+  background-color: #dddddd;
 }
 
 .nav {
@@ -144,6 +144,6 @@ main {
 
 .button-light {
   color: #97250c;
-  background-color: #F2F2F2;
+  background-color: #dddddd;
 }
 /*# sourceMappingURL=main.css.map */

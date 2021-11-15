@@ -13,7 +13,7 @@
     <nav>
         <!--NavBar-->
         <div class="nav">
-            <div id="navName"> 
+            <div id="navName">
                 <a href="index.php"><span id="nav-name">OnlineCraftAcademy</span></a>
             </div>
             <ul class="nav__list" id="nav-list">
@@ -29,14 +29,15 @@
                     </div>
                 </li>
                 <li class="nav__item" id="nav-experience">
-                    
-                    <a href="php/login_form.php" id="login"><button class="button-dark basic__button">Entrar</button></a>
+                    <a href="login_form.php" id="login"><button class="button-dark basic__button">Entrar</button></a>
                 </li>
-                <li class="nav__item " id="nav-experience">
-                    <a href="php/signup.php" id="login"><button class="button-light basic__button">Crear cuenta</button></a>
+                <li class="nav__item" id="nav-experience">
+                    <a href="signup_form.php" id="login"><button class="button-light basic__button">Crear cuenta</button></a>
                 </li>
                 <li class="nav__item " id="nav-shopping-cart">
-                    <a href="php/shopingCart.php" id="shopping-cart"><img id="nav-shopping-cart-img"src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" /></a>
+                    <a href="shopingCart.php" id="shopping-cart">
+                        <img id="nav-shopping-cart-img" src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" />
+                    </a>
                 </li>
             </ul>
         </div>
