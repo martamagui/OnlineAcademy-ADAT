@@ -1,3 +1,6 @@
+/*Users*/
+INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('ana@gmail.com','Ana','Studdson','1234');
+
 /*Ilustración*/
 INSERT INTO Courses(title, teacher, courseDes, rate, category, imgName, price) VALUES
 ('Cuaderno artístico para viajes imaginarios','Koi Samsa','Embárcate en un viaje imaginario lleno de creatividad e ilustra tus ideas, inquietudes, alegrías y sueños en un cuaderno artístico. Junto a la artista multidisciplinar Koi Samsa darás vida a un cuaderno único, mezclando el mundo plástico, visual y literario.', 5.0 ,'Ilustración','ff98a0fbbde6f54a3a2190a89d96330d.jpg',10.90),

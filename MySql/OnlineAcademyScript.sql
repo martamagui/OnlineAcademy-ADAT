@@ -14,21 +14,20 @@ CREATE TABLE Courses(
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE Users(
-	userID integer NOT NULL AUTO_INCREMENT,
+	email varchar(355) NOT NULL,
     firstName varchar (255) NOT NULL,
 	lastName varchar (255) NOT NULL,
-	email  varchar(255),
     clientPass  varchar(255),
-    primary key(userID)
+    primary key(email)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
-CREATE TABLE  Orders(
+CREATE TABLE Orders(
 	orderID integer NOT NULL AUTO_INCREMENT,
     orderDate date NOT NULL,
-    userIDfk integer NOT NULL,
+    emailFk varchar(355) NOT NULL,
 	totalPrice long,
     primary key(orderID),
-    foreign key(userIDfk) references Users (userID) ON DELETE restrict ON UPDATE CASCADE
+    foreign key(emailFk) references Users (email) ON DELETE restrict ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE OrderDetails(
@@ -42,9 +41,9 @@ CREATE TABLE OrderDetails(
 CREATE TABLE ShoppingCart(
 	cartID integer NOT NULL AUTO_INCREMENT,
     cartDate date NOT NULL,
-    userIDfk integer NOT NULL,
+    emailFk varchar(355) NOT NULL,
     primary key(cartID),
-    foreign key(userIDfk) references Users (userID) ON DELETE restrict ON UPDATE CASCADE
+    foreign key(emailFk) references Users (email) ON DELETE restrict ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE ShoppingCartDetails(
