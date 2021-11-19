@@ -45,3 +45,10 @@ INSERT INTO Courses(title, teacher, courseDes, rate, category, imgName, price) V
 INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('ana@gmail.com','Ana','Studdson','1234');
 INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('2021-11-19', 'ana@gmail.com');
 INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (1,1),(1,2),(1,3);
+
+SELECT * FROM Courses as TablaA
+inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID;
+
+SELECT * FROM Courses as TablaA
+inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID
+where TablaB.cartIDfk = (SELECT cartID FROM ShoppingCart WHERE emailFk='ana@gmail.com');

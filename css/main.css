@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+img {
+  height: 12vh;
+}
+
 a {
   text-decoration: none;
 }
