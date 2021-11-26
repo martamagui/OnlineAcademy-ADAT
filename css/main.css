@@ -57,8 +57,9 @@ main, .banner .banner__column {
           flex-direction: column;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .banner {
@@ -110,8 +111,8 @@ main, .banner .banner__column {
   width: 16vw;
   border-radius: 0.3vw;
   overflow: hidden;
-  -webkit-box-shadow: 2px 2px 2px 1px nav__bg;
-          box-shadow: 2px 2px 2px 1px nav__bg;
+  -webkit-box-shadow: 2px 2px 10px 1px #1616161f;
+          box-shadow: 2px 2px 10px 1px #1616161f;
 }
 
 .product__card img {
@@ -119,7 +120,7 @@ main, .banner .banner__column {
 }
 
 .product__card .product__card__info {
-  min-height: 20vh;
+  min-height: 22vh;
   padding: 0.5vw;
 }
 

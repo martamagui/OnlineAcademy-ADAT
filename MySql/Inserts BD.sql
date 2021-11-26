@@ -43,12 +43,12 @@ INSERT INTO Courses(title, teacher, courseDes, rate, category, imgName, price) V
 ('Introducción al tejido en telar de bastidor','Diana Cunha','Combinar técnicas ancestrales para crear piezas contemporáneas es una de las propuestas de la artista textil portuguesa Diana Cunha. Fundadora de la marca Oficina 166 que atiende a clientes de todo el mundo, Diana siempre está buscando nuevos materiales y diseños para experimentar con lenguajes y estilos en sus piezas decorativas hechas a mano.En este curso crearás un tapiz mediante un telar manual, aprendiendo los principales puntos y técnicas de creación de formas e incorporando texturas y flecos. Diana te compartirá su proceso creativo de principio a fin, desde las primeras ideas, montaje del telar, ejecución de la pieza hasta los acabados finales y su colocación en el espacio.',5.0,'Punto y Bordado','68c3354beb0cfe2e4f3c218b8e4c1ca7.jpg',9.90);
 /*Users*/
 INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('ana@gmail.com','Ana','Studdson','1234');
+INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('a','a','a','a');
+
 INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('2021-11-19', 'ana@gmail.com');
 INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (1,1),(1,2),(1,3);
-
+SELECT  *  FROM  ShoppingCart;
 SELECT * FROM Courses as TablaA
 inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID;
 
-SELECT * FROM Courses as TablaA
-inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID
-where TablaB.cartIDfk = (SELECT cartID FROM ShoppingCart WHERE emailFk='ana@gmail.com');
+SELECT * FROM Courses as TablaA inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID where TablaB.cartIDfk =  (SELECT cartID FROM ShoppingCart WHERE emailFk='ana@gmail.com');
