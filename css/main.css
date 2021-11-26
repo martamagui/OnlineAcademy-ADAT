@@ -110,6 +110,8 @@ main, .banner .banner__column {
   width: 16vw;
   border-radius: 0.3vw;
   overflow: hidden;
+  -webkit-box-shadow: 2px 2px 2px 1px nav__bg;
+          box-shadow: 2px 2px 2px 1px nav__bg;
 }
 
 .product__card img {

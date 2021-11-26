@@ -21,8 +21,9 @@ if ($result->num_rows > 0) {
         echo "<div class ='product__card__info'>";
         echo "<h2>". $row["title"] ."</h2>";
         echo "<span> Curso impartido por " . $row["teacher"] . "</span> ";
-        echo "<a href='php/showCategory.php?value=".$row["category"] ."'>". $row["category"] ."</a>";
-        echo "<button type='button' class='basic__button button-dark'>". $row["price"] ." €</button>";
+
+        echo "<a href='php/showCategory.php?value=". $row["category"] ."'>". $row["category"] ."</a>";
+        echo "<button type='button' class='basic__button button-dark'>".  number_format((float)$row["price"],2, '.','') ." €</button>";
         echo "</div>";
         echo "</div>";
     }
