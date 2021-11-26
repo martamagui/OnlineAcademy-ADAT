@@ -17,6 +17,13 @@
     background-color: $btn_dark;
     color: $white;
 }
+.button-dark{
+    background-color: $btn_dark;
+    color: $white;
+}
+.button-dark:hover{
+    background-color: $btn_dark;
+}
 .button-light{
     color: $btn_dark;
     background-color: $web-bg;

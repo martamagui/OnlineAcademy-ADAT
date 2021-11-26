@@ -47,6 +47,20 @@ main, .banner .banner__column {
           justify-content: center;
 }
 
+.product__card .product__card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,13 +107,18 @@ main, .banner .banner__column {
 }
 
 .product__card {
-  width: 15vw;
-  border-radius: 0.5vw;
+  width: 16vw;
+  border-radius: 0.3vw;
   overflow: hidden;
 }
 
 .product__card img {
-  width: 15vw;
+  width: 16vw;
+}
+
+.product__card .product__card__info {
+  min-height: 20vh;
+  padding: 0.5vw;
 }
 
 /*Layout*/
@@ -146,6 +165,8 @@ main {
 }
 
 .products__container {
+  -ms-grid-row-align: center;
+      align-self: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -153,7 +174,8 @@ main {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1vw;
+  padding: 1vw;
 }
 
 /*Themes*/
@@ -178,6 +200,15 @@ main {
 .button-dark {
   background-color: #97250c;
   color: #fff;
+}
+
+.button-dark {
+  background-color: #97250c;
+  color: #fff;
+}
+
+.button-dark:hover {
+  background-color: #97250c;
 }
 
 .button-light {

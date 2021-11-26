@@ -18,10 +18,11 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<div class ='product__card'>";
         echo "<a href=''><img src='../img/" .$row["imgName"] ."' /></a>";
-        echo "<div class ='product__card__text'>";
+        echo "<div class ='product__card__info'>";
         echo "<h2>". $row["title"] ."</h2>";
         echo "<span> Curso impartido por " . $row["teacher"] . "</span> ";
         echo "<a href='php/showCategory.php?value=".$row["category"] ."'>". $row["category"] ."</a>";
+        echo "<button type='button' class='basic__button button-dark'>". $row["price"] ." €</button>";
         echo "</div>";
         echo "</div>";
     }
