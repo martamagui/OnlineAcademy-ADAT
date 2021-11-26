@@ -1,0 +1,10 @@
+.product__card{
+    @extend %Dflex-col-center;
+    width: 15vw;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    
+    img{
+        width: 15vw;
+    }
+}

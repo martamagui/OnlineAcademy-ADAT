@@ -1,6 +1,7 @@
 <?php
 include_once 'header2.php'
 ?>
+<div class ='products__container'>
 <?php
 require 'connection.php';
 $category = $_GET["value"];
@@ -15,7 +16,14 @@ $result = mysqli_query($connection, $sql) or die("Ups there was a conecction pro
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo "Title: " . $row["title"] . " - Teacher: " . $row["teacher"] . " - " . $row["category"] . "<br>";
+        echo "<div class ='product__card'>";
+        echo "<a href=''><img src='../img/" .$row["imgName"] ."' /></a>";
+        echo "<div class ='product__card__text'>";
+        echo "<h2>". $row["title"] ."</h2>";
+        echo "<span> Curso impartido por " . $row["teacher"] . "</span> ";
+        echo "<a href='php/showCategory.php?value=".$row["category"] ."'>". $row["category"] ."</a>";
+        echo "</div>";
+        echo "</div>";
     }
 } else {
     echo "0 results";
@@ -23,6 +31,7 @@ if ($result->num_rows > 0) {
 mysqli_close($connection);
 
 ?>
+</div>
 <?php
 include_once 'footer2.php'
 ?>
