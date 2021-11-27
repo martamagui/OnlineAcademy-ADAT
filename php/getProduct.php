@@ -1,20 +1,23 @@
 <?php
 session_start();
 require 'connection.php';
-
+$courseId= $_GET["course"];
 
 $user = $_SESSION["email"];
 
 $today = date("y-m-d"); 
 $qryShoppingCart = "";
 
-$result = $connection ->query("SELECT * FROM ShoppingCart WHERE emailFk='".$user."';");
-
-if($result-> num_rows <= 0){
+$resultCartId = $connection ->query("SELECT cartID FROM ShoppingCart WHERE emailFk='".$user."';");
+$cartId="";
+while ($row = $resultCartId->fetch_assoc()) {
+    $cartId=$row["cartID"];
+}
+if($resultCartId-> num_rows <= 0){
     $qryShoppingCart = "INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('" .$today." ', '".$user."');";
 }else{
     $qryShoppingCart = "UPDATE ShoppingCart SET cartDate='".$today."' WHERE emailFk='".$user."'";
 }
 $resultShoppingCartUpdate = $connection ->query($qryShoppingCart);
-
-$qryInserts = "INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('2021-11-19', '.$user.');";
+//TODO SEGUIR CON LOS INSERTS DE LOS PRODUCTOS AL CARRITO
+$resultAddProduct = $connection ->query("INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (".$cartId.",".$courseId.")");
