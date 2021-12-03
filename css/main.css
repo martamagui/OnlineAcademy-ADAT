@@ -201,21 +201,21 @@ main {
 }
 
 .button-dark {
-  background-color: #97250c;
+  background-color: #8d2109;
   color: #fff;
 }
 
 .button-dark {
-  background-color: #97250c;
+  background-color: #8d2109;
   color: #fff;
 }
 
 .button-dark:hover {
-  background-color: #97250c;
+  background-color: #ac4832;
 }
 
 .button-light {
-  color: #97250c;
+  color: #8d2109;
   background-color: #dddddd;
 }
 
