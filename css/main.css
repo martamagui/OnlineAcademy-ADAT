@@ -8,6 +8,10 @@ img {
   width: 5vw;
 }
 
+* {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 a {
   text-decoration: none;
 }
