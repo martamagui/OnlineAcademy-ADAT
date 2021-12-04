@@ -15,6 +15,13 @@ include_once 'header.php'
     </div>
 
 </div>
+<div class="landing__main__container">
+    <h2>Aprende practicando</h2>
+    <p>Accede a los mejores cursos online para creativos. Interactúa con los mejores profesionales y descubre todos los secretos del sector.</p>
+</div>
+<?php
+include_once 'php/load_6_products.php'
+?>
 <?php
 include_once 'footer.php'
 ?>

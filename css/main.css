@@ -152,7 +152,7 @@ main {
 
 /*Page*/
 .banner {
-  padding: 5vh;
+  padding: 8vh;
 }
 
 .banner .banner__column {
@@ -169,6 +169,26 @@ main {
 
 .banner .banner__column h2 {
   display: inline-block;
+}
+
+.landing__main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 4vh;
+}
+
+.landing__main__container h2 {
+  padding-bottom: 2vh;
 }
 
 .products__container {
