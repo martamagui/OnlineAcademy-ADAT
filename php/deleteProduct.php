@@ -6,4 +6,5 @@ $cartId = $_GET["cartId"];
 $user = $_SESSION["email"];
 echo $courseId . " Cart:" . $cartId;
 $result = $connection->query("DELETE FROM ShoppingCartDetails WHERE cartIDfk='" . $cartId . "' AND courseIDfk='" . $courseId . "';");
-header('Location: ../shopping_cart.php');
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+

@@ -22,3 +22,4 @@ if ($resultCartId->num_rows <= 0) {
 $resultShoppingCartUpdate = $connection->query($qryShoppingCart);
 //TODO SEGUIR CON LOS INSERTS DE LOS PRODUCTOS AL CARRITO
 $resultAddProduct = $connection->query("INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (" . $cartId . "," . $courseId . ")");
+header('Location: ' . $_SERVER['HTTP_REFERER']);
