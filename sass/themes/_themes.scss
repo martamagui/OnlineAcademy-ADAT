@@ -1,33 +1,39 @@
-.footer, main{
-    background-color: $web-bg;
+.footer,
+main {
+  background-color: $web-bg;
 }
-.nav{
-    background-color: $nav__bg;
+.nav {
+  background-color: $nav__bg;
+  color: $white;
+  a {
+    list-style: none;
     color: $white;
-    a{
-        list-style: none;
-        color: $white;
-    }
-    
+  }
 }
-.banner{
-    background-color: $white;
+.banner {
+  background-color: $white;
 }
-.button-dark{
-    background-color: $btn_dark;
-    color: $white;
+.button-dark {
+  background-color: $btn_dark;
+  color: $white;
 }
-.button-dark{
-    background-color: $btn_dark;
-    color: $white;
+.button-dark {
+  background-color: $btn_dark;
+  color: $white;
 }
-.button-dark:hover{
-    background-color: $btn_dark_hover;
+.button-dark:hover {
+  background-color: $btn_dark_hover;
 }
-.button-light{
-    color: $btn_dark;
-    background-color: $web-bg;
+.button-light {
+  color: $btn_dark;
+  background-color: $web-bg;
 }
-.product__card{
-    background-color: $white;
+.product__card {
+  background-color: $white;
+}
+.divider {
+  background-color: $divider;
+}
+#mail-btn {
+  background-color: $web-bg;
 }

@@ -38,7 +38,7 @@ main, .banner .banner__column {
           justify-content: start;
 }
 
-.product__card {
+.product__card, .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,6 +82,19 @@ main, .banner .banner__column {
           align-items: center;
 }
 
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .nav, .nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +124,15 @@ main, .banner .banner__column {
   padding: 0.7vw;
 }
 
+#mail-btn {
+  border-style: none;
+}
+
+#mail-btn svg {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
 .product__card {
   width: 16vw;
   border-radius: 0.3vw;
@@ -129,6 +151,23 @@ main, .banner .banner__column {
 }
 
 /*Layout*/
+.footer {
+  width: 100%;
+  padding-top: 5vh;
+}
+
+.footer .divider {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 95%;
+  height: 1px;
+}
+
+.footer .footer__container .column {
+  padding: 5vh;
+}
+
 .nav {
   background-color: aqua;
 }
@@ -206,7 +245,8 @@ main {
 }
 
 /*Themes*/
-.footer, main {
+.footer,
+main {
   background-color: #dddddd;
 }
 
@@ -245,5 +285,13 @@ main {
 
 .product__card {
   background-color: #fff;
+}
+
+.divider {
+  background-color: #a3a3a3;
+}
+
+#mail-btn {
+  background-color: #dddddd;
 }
 /*# sourceMappingURL=main.css.map */

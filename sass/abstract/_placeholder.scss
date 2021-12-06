@@ -2,26 +2,28 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  
 }
 %Dflex-col-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 %Dflex-col-center-sa {
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-between;
-  
 }
 %Dflex-row-center-middle {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+%Dflex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 %Dflex-row-spbwt-center {
   display: flex;

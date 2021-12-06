@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  padding-top: 5vh;
+  @extend %Dflex-col-center;
+  .divider {
+    align-self: center;
+    width: 95%;
+    height: 1px;
+  }
+  .footer__container {
+    @extend %Dflex-row-center;
+    .column {
+      padding: 5vh;
+    }
+  }
+}
