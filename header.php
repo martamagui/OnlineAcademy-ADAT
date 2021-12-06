@@ -31,12 +31,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav__item" id="nav-experience">
-                    <a href="login_form.php" id="login"><button class="button-dark basic__button">Entrar</button></a>
-                </li>
-                <li class="nav__item" id="nav-experience">
-                    <a href="signup_form.php" id="login"><button class="button-light basic__button">Crear cuenta</button></a>
-                </li>
+                <?php
+                include_once 'php/navbar_action.php'
+                ?>
                 <li class="nav__item " id="nav-shopping-cart">
                     <a href="shopping_cart.php" id="shopping-cart">
                         <img id="nav-shopping-cart-img" src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-shopping-cart-miscellaneous-kiranshastry-gradient-kiranshastry.png" />

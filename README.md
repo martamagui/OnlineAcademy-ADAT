@@ -23,5 +23,6 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [ ] Add a random String functionality wich asigns a random token when
       you're buying without been logged.
 - [ ] Add product detail view.
+- [ ] Fix the frontend footer.
       pasarelA PAGO, LOGIN, REGISTRO, ENVIAR CORREO, MANDAR POR EMAIL LA FACTURA. PHPMAILER
       PAGINA QUE INFORME DE QUE SE A AÑADIDO EL PRODUCTO.

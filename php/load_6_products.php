@@ -9,7 +9,7 @@
     if ($result->num_rows > 0) {
         for ($i = 0; $i < 6; $i++) {
             $row = $result->fetch_assoc();
-            echo "<form action='getProduct.php?course=" . $row["courseID"] . "' method='post' class ='product__card'>";
+            echo "<form action='php/getProduct.php?course=" . $row["courseID"] . "' method='post' class ='product__card'>";
             echo "<a href=''><img src='img/" . $row["imgName"] . "' /></a>";
             echo "<div class ='product__card__info'>";
             echo "<h2>" . $row["title"] . "</h2>";
