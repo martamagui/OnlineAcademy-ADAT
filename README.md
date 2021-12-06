@@ -12,12 +12,15 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - HTML
 
 ## Todo list:
+
 - [ ] Check if a user already exists
-- [X] Add delete button and functionalities for the shopping cart.
-- [ ] Add a finish order button.
+- [ ] Fix on the landing the add to cart function.
 - [ ] Use sessions to change navBar/when are logged login button must dissapear.
-- [ ] Add a random String functionality wich asigns a random token when 
-you're buying without been logged.
+- [ ] Create a filter menu.
+- [x] Add delete button and functionalities for the shopping cart.
+- [ ] Add a finish order button.
+- [ ] Add a random String functionality wich asigns a random token when
+      you're buying without been logged.
 - [ ] Add product detail view.
       pasarelA PAGO, LOGIN, REGISTRO, ENVIAR CORREO, MANDAR POR EMAIL LA FACTURA. PHPMAILER
       PAGINA QUE INFORME DE QUE SE A AÑADIDO EL PRODUCTO.
