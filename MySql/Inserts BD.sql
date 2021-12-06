@@ -44,7 +44,7 @@ INSERT INTO Courses(title, teacher, courseDes, rate, category, imgName, price) V
 /*Users*/
 INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('ana@gmail.com','Ana','Studdson','1234');
 INSERT INTO Users (email, firstName, lastName, clientPass) VALUES ('a','a','a','a');
-
+select *  from Users;
 INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('2021-11-19', 'ana@gmail.com');
 INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (1,1),(1,2),(1,3);
 SELECT  *  FROM  ShoppingCart;

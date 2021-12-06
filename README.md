@@ -17,6 +17,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [ ] Fix on the landing the add to cart function.
 - [ ] Use sessions to change navBar/when are logged login button must dissapear.
 - [ ] Create a filter menu.
+
 - [x] Add delete button and functionalities for the shopping cart.
 - [ ] Add a finish order button.
 - [ ] Add a random String functionality wich asigns a random token when
