@@ -10,7 +10,13 @@
   .footer__container {
     @extend %Dflex-row-center;
     .column {
-      padding: 5vh;
+      padding: 2vh;
+      h3 {
+        padding: {
+          top: 1vh;
+          bottom: 1vh;
+        }
+      }
     }
   }
 }
