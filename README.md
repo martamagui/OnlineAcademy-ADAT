@@ -13,8 +13,8 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 
 ## Todo list:
 
-- [ ] Check if a user already exists
-- [ ] Fix on the landing the add to cart function.
+- [x] Check if a user already exists
+- [x] Fix on the landing the add to cart function.
 - [ ] Use sessions to change navBar/when are logged login button must dissapear.
 - [ ] Create a filter menu.
 
