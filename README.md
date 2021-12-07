@@ -16,8 +16,8 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [x] Check if a user already exists
 - [x] Fix on the landing the add to cart function.
 - [x] Use sessions to change navBar/when are logged login button must dissapear.
-- [ ] Create a filter menu.
-- [ ] Check Course buton on nav http://localhost/ADAT/OnlineAcademy-ADAT/php/php/showCategory.php?value=All (url not found)
+- [x] Create a filter menu.
+- [x] Check Course buton on nav (url not found)
 
 - [x] Add delete button and functionalities for the shopping cart.
 - [ ] Add a finish order button. When a order is finished, the shoppping cart must be deleted from the database.
