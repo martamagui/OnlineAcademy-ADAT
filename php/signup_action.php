@@ -8,7 +8,11 @@ $lastName = $_POST["lastName"];
 $email = $_POST["email"];
 $clientPass = $_POST["password"];
 $clientPass2 = $_POST["psw-repeat"];
+
+
 checkUser($connection, $clientPass, $clientPass2, $email, $firstName, $lastName);
+
+
 function checkUser($connection, $clientPass, $clientPass2, $email, $firstName, $lastName)
 {
     $SQLUserExist = "SELECT email FROM Users WHERE email='" . $email . "';";
@@ -19,6 +23,8 @@ function checkUser($connection, $clientPass, $clientPass2, $email, $firstName, $
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }
+
+
 function createNewUser($connection, $clientPass, $clientPass2, $email, $firstName, $lastName)
 {
     if ($clientPass == $clientPass2) {

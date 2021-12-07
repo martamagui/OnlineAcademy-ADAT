@@ -1,8 +1,15 @@
-.products__container{
-    align-self: center;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1vw;
-    padding: 1vw;
+.products__container {
+  align-self: center;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1vw;
+  padding: 1vw;
+}
+
+.wrapper {
+  width: 48%;
+  padding: 1vw;
+  align-self: center;
+  box-shadow: 2px 2px 10px 1px #1616161f;
 }

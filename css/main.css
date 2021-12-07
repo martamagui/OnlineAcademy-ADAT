@@ -249,6 +249,16 @@ main {
   padding: 1vw;
 }
 
+.wrapper {
+  width: 48%;
+  padding: 1vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-shadow: 2px 2px 10px 1px #1616161f;
+          box-shadow: 2px 2px 10px 1px #1616161f;
+}
+
 /*Themes*/
 .footer,
 main {

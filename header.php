@@ -21,7 +21,7 @@
             </div>
             <ul class="nav__list" id="nav-list">
                 <li class="nav__item " id="nav-category">
-                    <a href="php/showCategory.php?value=All">Cursos</a>
+                    <a href="courses_list.php?value=All">Cursos</a>
                     <div class="nav__item collapse-submenu">
                         <p class="collapse__tiltle">Categorías</p>
                         <ul>
