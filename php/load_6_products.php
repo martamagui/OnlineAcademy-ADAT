@@ -4,6 +4,7 @@
     $sql = "";
     $sql = "SELECT * FROM Courses";
     $result = mysqli_query($connection, $sql) or die("Ups there was a conecction problem :S");
+
     if ($result->num_rows > 0) {
         for ($i = 0; $i < 6; $i++) {
             $row = $result->fetch_assoc();
@@ -23,4 +24,7 @@
     mysqli_close($connection);
 
     ?>
+    <form action="complete_order.php">
+
+    </form>
 </div>

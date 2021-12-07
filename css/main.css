@@ -165,12 +165,12 @@ main, .banner .banner__column {
 }
 
 .footer .footer__container .column {
-  padding: 2vh;
+  padding: 4vh;
 }
 
 .footer .footer__container .column h3 {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .nav {
