@@ -1,7 +1,6 @@
 <?php
 include_once 'header.php'
 ?>
-//TODO Recoger valores del select, me he quedado aqui.
 <div class="wrapper">
     <form action="courses_list.php" method="post">
         <h4>Filtrar por categoría:</h4>
