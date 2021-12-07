@@ -4,10 +4,9 @@ include_once 'header.php'
 <h1>Carrito</h1>
 <ul>
     <?php
-    session_start();
+    // session_start();
     require 'php/connection.php';
     $user = $_SESSION["email"];
-    //TODO Da error es porque tengo que controlar que no se creen dos carritos de la misma persona.
     $result = $connection->query("SELECT * FROM Courses as TablaA inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID");
     if ($result !== false && $result->num_rows > 0) {
         // output data of each row
