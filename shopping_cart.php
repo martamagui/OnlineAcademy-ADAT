@@ -25,10 +25,11 @@ if ($result !== false && $result->num_rows > 0) {
 }
 echo "</ul>";
 echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
-echo "<form action='php/complete_order.php method='post'>
+echo "<form action='php/mail.php' method='post'>
     <input type='submit' value='Tramitar pedido' class='basic__button button-dark''/>
     </form>";
 mysqli_close($connection);
+
 ?>
 
 
