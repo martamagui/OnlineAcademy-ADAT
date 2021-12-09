@@ -2,8 +2,14 @@
 session_start();
 require 'connection.php';
 $courseId = $_GET["course"];
-
-$user = $_SESSION["email"];
+$user = "";
+if (isset($_SESSION["email"])) {
+    $user = $_SESSION["email"];
+} else {
+    require 'extensionFunctions/randomString.php';
+    $user = generateRandomString();
+    $_SESSION["email"] = $user;
+}
 
 $today = date("y-m-d");
 $qryShoppingCart = "";
