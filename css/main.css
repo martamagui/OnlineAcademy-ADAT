@@ -215,6 +215,10 @@ main {
   display: inline-block;
 }
 
+.banner .banner__column .banner__button {
+  margin-right: 2vw;
+}
+
 .landing__main__container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,27 +1,30 @@
-.banner{
-    @extend %Dflex-row-center-middle;
-    padding: 8vh;
-    .banner__column{
-        width: 28vw;
-        @extend %Dflex-col-start;
-        .banner__item{
-            padding: 1vw;
-        }
-        img{
-            width: 20vw;
-        }
-        h2{
-            display: inline-block;
-        }
+.banner {
+  @extend %Dflex-row-center-middle;
+  padding: 8vh;
+  .banner__column {
+    width: 28vw;
+    @extend %Dflex-col-start;
+    .banner__item {
+      padding: 1vw;
     }
+    img {
+      width: 20vw;
+    }
+    h2 {
+      display: inline-block;
+    }
+    .banner__button {
+      margin-right: 2vw;
+    }
+  }
 }
-.landing__main__container{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    align-self: center;
-    padding: 4vh;
-    h2{
-        padding-bottom: 2vh;
-    }
+.landing__main__container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-self: center;
+  padding: 4vh;
+  h2 {
+    padding-bottom: 2vh;
+  }
 }

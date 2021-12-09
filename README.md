@@ -25,6 +25,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 
 ### MUST: pasarelA PAGO, ENVIAR CORREO, MANDAR POR EMAIL LA FACTURA. PHPMAILER PAGINA QUE INFORME DE QUE SE A AÑADIDO EL PRODUCTO.
 
+- [ ] It shouldn't allow to add products to cart if you aren't logged or random token will be asigned.
 - [ ] Add a finish order button. When a order is finished, the shoppping cart must be deleted from the database.
 - [ ] Add an account button to the navbar.
 - [ ] Add a random String functionality wich asigns a random token when
