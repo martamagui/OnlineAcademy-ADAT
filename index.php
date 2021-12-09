@@ -10,7 +10,7 @@ include_once 'header.php'
         <span class="banner__item"> Aprende de los mejores artistas de cada área.</span>
         <div class="banner__button__container banner__item">
             <a href="courses_list.php?value=All"><button class="banner__button button-dark">Ver cursos</button></a>
-            <button class="banner__button button-light">Crea tu cuenta</button>
+            <a href="signup_form.php"><button class="banner__button button-light">Crea tu cuenta</button></a>
         </div>
     </div>
 
