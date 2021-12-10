@@ -1,6 +1,7 @@
 <?php
 session_start();
 require 'connection.php';
+
 $courseId = $_GET["course"];
 $user = "";
 if (isset($_SESSION["email"])) {
@@ -18,6 +19,7 @@ $resultCartId = $connection->query("SELECT cartID FROM ShoppingCart WHERE emailF
 $cartId = "";
 while ($row = $resultCartId->fetch_assoc()) {
     $cartId = $row["cartID"];
+   
     echo $row["cartID"];
 }
 if ($resultCartId->num_rows <= 0) {
@@ -26,6 +28,11 @@ if ($resultCartId->num_rows <= 0) {
     $qryShoppingCart = "UPDATE ShoppingCart SET cartDate='" . $today . "' WHERE emailFk='" . $user . "'";
 }
 $resultShoppingCartUpdate = $connection->query($qryShoppingCart);
-//TODO SEGUIR CON LOS INSERTS DE LOS PRODUCTOS AL CARRITO
+
 $resultAddProduct = $connection->query("INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (" . $cartId . "," . $courseId . ")");
+mysqli_close($connection);
+
+
+
 header('Location: ' . $_SERVER['HTTP_REFERER']);
+

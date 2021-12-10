@@ -22,7 +22,7 @@ CREATE TABLE Users(
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE Orders(
-	orderID integer NOT NULL AUTO_INCREMENT,
+	orderID varchar(50) NOT NULL,
     orderDate date NOT NULL,
     emailFk varchar(355) NOT NULL,
 	totalPrice long,
@@ -31,7 +31,7 @@ CREATE TABLE Orders(
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE OrderDetails(
-	courseIDfk integer NOT NULL,
+	courseIDfk varchar(50) NOT NULL,
 	orderIDfk integer NOT NULL,
     PRIMARY KEY (courseIDfk,orderIDfk),
     foreign key(courseIDfk) references Courses (courseID) ON DELETE restrict ON UPDATE CASCADE,
