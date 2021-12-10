@@ -9,6 +9,9 @@ main {
     list-style: none;
     color: $white;
   }
+  a:hover{
+    color:  $web-bg;
+  }
   span {
     color: $white;
   }
@@ -30,6 +33,10 @@ main {
 .button-light {
   color: $btn_dark;
   background-color: $web-bg;
+}
+.button-light:hover {
+  color: $white;
+  background-color: $btn_light_hover;
 }
 .product__card {
   background-color: $white;

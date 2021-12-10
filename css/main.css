@@ -279,6 +279,10 @@ main {
   color: #fff;
 }
 
+.nav a:hover {
+  color: #dddddd;
+}
+
 .nav span {
   color: #fff;
 }
@@ -304,6 +308,11 @@ main {
 .button-light {
   color: #8d2109;
   background-color: #dddddd;
+}
+
+.button-light:hover {
+  color: #fff;
+  background-color: #8d8d8d;
 }
 
 .product__card {
