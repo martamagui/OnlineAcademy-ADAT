@@ -54,3 +54,4 @@ SELECT * FROM Courses as TablaA
 inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID;
 
 SELECT * FROM Courses as TablaA inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID where TablaB.cartIDfk = (SELECT cartID FROM ShoppingCart WHERE emailFk='ana@gmail.com');
+SELECT * FROM Courses;
