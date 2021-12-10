@@ -43,14 +43,14 @@ CREATE TABLE ShoppingCart(
     cartDate date NOT NULL,
     emailFk varchar(355) NOT NULL,
     primary key(cartID),
-    foreign key(emailFk) references Users (email) ON DELETE restrict ON UPDATE CASCADE
+    foreign key(emailFk) references Users (email) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 CREATE TABLE ShoppingCartDetails(
 	courseIDfk integer NOT NULL,
 	cartIDfk integer NOT NULL,
     PRIMARY KEY (courseIDfk,cartIDfk),
-    foreign key(courseIDfk) references Courses (courseID) ON DELETE restrict ON UPDATE CASCADE,
-    foreign key(cartIDfk) references ShoppingCart (cartID) ON DELETE restrict ON UPDATE CASCADE
+    foreign key(courseIDfk) references Courses (courseID) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key(cartIDfk) references ShoppingCart (cartID) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
