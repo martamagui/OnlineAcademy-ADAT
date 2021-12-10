@@ -54,3 +54,4 @@ CREATE TABLE ShoppingCartDetails(
     foreign key(cartIDfk) references ShoppingCart (cartID) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
+INSERT INTO Orders (orderDate, emailFk, totalPrice) VALUES ('ana@gmail.com','Ana','Studdson','1234');

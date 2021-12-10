@@ -15,6 +15,7 @@ $mail->Mailer = "smtp";
 
 $mail->SMTPDebug = 1;
 $mail->SMTPAuth = TRUE;
+//TODO Mirar https://stackoverflow.com/questions/22927634/smtp-connect-failed-phpmailer-php para corregir el fallo
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;
 $mail->Host = "smtp.google.com";
