@@ -13,7 +13,6 @@ include_once 'header.php'
             <a href="signup_form.php"><button class="banner__button button-light">Crea tu cuenta</button></a>
         </div>
     </div>
-
 </div>
 <div class="landing__main__container">
     <h2>Aprende practicando</h2>

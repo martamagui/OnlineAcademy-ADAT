@@ -10,10 +10,29 @@
     #nav-shopping-cart-img{
       width: 2em;
     }
+    #nav-category{
+      padding: {
+        left: 5em;
+        right: 5em;
+      };
+    }
     
   }
 }
 
 .collapse-submenu {
   display: none;
+  margin-top: 1.2vh;
+  position: absolute;
+  z-index: 10;
+  ul{
+    list-style: none;
+  }
+  p, ul li{
+    padding: {
+      top:0.5vw;
+      bottom: 0.5vw;
+    }
+  }
+  
 }

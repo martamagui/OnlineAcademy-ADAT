@@ -186,8 +186,25 @@ main, .banner .banner__column {
   width: 2em;
 }
 
+.nav .nav__list #nav-category {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
 .collapse-submenu {
   display: none;
+  margin-top: 1.2vh;
+  position: absolute;
+  z-index: 10;
+}
+
+.collapse-submenu ul {
+  list-style: none;
+}
+
+.collapse-submenu p, .collapse-submenu ul li {
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 
 main {
@@ -325,5 +342,9 @@ main {
 
 #mail-btn {
   background-color: #dddddd;
+}
+
+.collapse-submenu {
+  background-color: #161616;
 }
 /*# sourceMappingURL=main.css.map */
