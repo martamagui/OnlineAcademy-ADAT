@@ -421,3 +421,7 @@ FROM
 WHERE
   ShoppingCart.cartID = ShoppingCartDetails.cartIDfk
   AND ShoppingCart.cartID = '1234456';
+SELECT
+  *
+FROM
+  ORDERS;

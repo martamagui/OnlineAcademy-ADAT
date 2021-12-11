@@ -7,6 +7,7 @@ include_once 'header.php'
         <h2>¿Está todo bien? </br>
             <?php
             include_once 'php/cart/totalAmount.php';
+            echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
             ?>
         </h2>
         <form action="confirm_order.php" method="post">

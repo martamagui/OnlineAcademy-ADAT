@@ -11,7 +11,9 @@ include_once 'header.php'
     <?php
     include_once 'php/cart/displayProducts.php';
     include_once 'php/cart/totalAmount.php';
+    echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
     ?>
+
     <form action='pay_order.php' method='post'>
       <input type='submit' value='Pagar' class='basic__button button-dark''/>
     </form>

@@ -35,6 +35,4 @@ echo $_SESSION["cartID"];
 $resultAddProduct = $connection->query("INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (" . $cartId . "," . $courseId . ")");
 mysqli_close($connection);
 
-
-
-//header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);

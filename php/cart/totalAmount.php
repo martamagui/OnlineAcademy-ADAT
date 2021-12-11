@@ -17,7 +17,6 @@ function total()
     return $totalPrice;
 }
 $totalPrice = total();
-echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
 
 if ($totalPrice > 0) {
     $_SESSION["canOrder"] = true;
