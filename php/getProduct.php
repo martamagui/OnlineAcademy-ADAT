@@ -1,6 +1,7 @@
 <?php
 session_start();
 require 'connection.php';
+require 'extensionFunctions/randomString.php';
 
 $courseId = $_GET["course"];
 $user = "";
@@ -19,15 +20,16 @@ $resultCartId = $connection->query("SELECT cartID FROM ShoppingCart WHERE emailF
 $cartId = "";
 while ($row = $resultCartId->fetch_assoc()) {
     $cartId = $row["cartID"];
-   
     echo $row["cartID"];
 }
 if ($resultCartId->num_rows <= 0) {
-    $qryShoppingCart = "INSERT INTO ShoppingCart(cartDate, emailFk) VALUES ('" . $today . " ', '" . $user . "');";
+    $cartId = generateRandomString();
+    $qryShoppingCart = "INSERT INTO ShoppingCart(cartId,cartDate, emailFk) VALUES ('" . $cartId . "','" . $today . " ', '" . $user . "');";
 } else {
     $qryShoppingCart = "UPDATE ShoppingCart SET cartDate='" . $today . "' WHERE emailFk='" . $user . "'";
 }
 $resultShoppingCartUpdate = $connection->query($qryShoppingCart);
+$_SESSION["cartID"] = $cartId;
 
 $resultAddProduct = $connection->query("INSERT INTO ShoppingCartDetails(cartIDfk, courseIDfk) values (" . $cartId . "," . $courseId . ")");
 mysqli_close($connection);
@@ -35,4 +37,3 @@ mysqli_close($connection);
 
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
-

@@ -2,7 +2,7 @@
 require 'php/connection.php';
 if (isset($_SESSION["email"])) {
     $user = $_SESSION["email"];
-    $result = $connection->query("SELECT * FROM Courses as TablaA inner join ShoppingCartDetails as TablaB on TablaB.courseIDfk= TablaA.courseID");
+    $result = $connection->query("SELECT * FROM ShoppingCart, ShoppingCartDetails, Courses WHERE ShoppingCart.cartID = ShoppingCartDetails.cartIDfk AND ShoppingCartDetails.courseIDfk =  Courses.courseID AND ShoppingCart.cartID ='" . $_SESSION["cartID"] . "';");
     echo "<ul>";
     if ($result !== false && $result->num_rows > 0) {
         // output data of each row
@@ -21,3 +21,4 @@ if (isset($_SESSION["email"])) {
 } else {
     echo "<p>No hay productos añadidos aún</p>";
 }
+//TODO Añadir nombre de las columnas nuevas.

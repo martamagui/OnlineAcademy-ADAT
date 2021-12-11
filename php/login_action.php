@@ -19,6 +19,8 @@ if ($reg = mysqli_fetch_array($result)) {
     $_SESSION["userName"] = $reg["firstName"];
     // redirigimos al usuario a la pagina principal.
     header('location: ../index.php');
+} else {
+    echo "<p>Fallo en el login.</p>";
 }
 
 mysqli_close($connection);

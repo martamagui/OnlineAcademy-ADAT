@@ -9,5 +9,3 @@ function getCartId(){
     return $cartId;
     mysqli_close($connection);
 }
-
-?>
