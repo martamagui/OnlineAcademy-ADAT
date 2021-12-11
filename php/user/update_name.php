@@ -17,4 +17,5 @@ if (isset($_SESSION["email"])) {
         }
     }
 }
+mysqli_close($connection);
 header('Location: ' . $_SERVER['HTTP_REFERER']);

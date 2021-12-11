@@ -1,6 +1,8 @@
 <?php
 // connectamos el archivo con la sessión del navegador
-session_start();
+if (session_id() == '') {
+    session_start();
+}
 //cargamos la conexión
 require 'connection.php';
 

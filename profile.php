@@ -13,12 +13,12 @@ include_once 'php/user/get_user_info.php';
 
         <input type="submit" value="Actualizar datos">
     </form>
-    <form action="php/user/change_psw.php" method="post">
+    <form action="php/user/update_psw.php" method="post">
         <label for="psw">Contraseña: </label>
-        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        <input type="password" placeholder="Contraseña" name="password" id="password" required>
 
         <label for="psw-repeat">Repita la contraseña: </label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <input type="password" placeholder="Repita Contraseña" name="psw-repeat" id="psw-repeat" required>
 
         <input type="submit" value="Cambiar contraseña">
     </form>
