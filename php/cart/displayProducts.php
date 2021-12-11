@@ -21,4 +21,3 @@ if (isset($_SESSION["email"])) {
 } else {
     echo "<p>No hay productos añadidos aún</p>";
 }
-//TODO Añadir nombre de las columnas nuevas.
