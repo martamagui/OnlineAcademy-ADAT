@@ -29,6 +29,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [x] Add a finish order button. When a order is finished, the shoppping cart must be deleted from the database.
 - [ ] Add an account button to the navbar.
 - [ ] Create account views.
+- [ ] Check password lenght.
 - [ ] Unify load6_products and list_component
 
 ### FrontEnd
