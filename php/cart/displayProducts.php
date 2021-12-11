@@ -1,6 +1,6 @@
 <?php
 require 'php/connection.php';
-if (isset($_SESSION["email"])) {
+if (isset($_SESSION["email"]) && isset($_SESSION["cartID"])) {
     $user = $_SESSION["email"];
     $result = $connection->query("SELECT * FROM ShoppingCart, ShoppingCartDetails, Courses WHERE ShoppingCart.cartID = ShoppingCartDetails.cartIDfk AND ShoppingCartDetails.courseIDfk =  Courses.courseID AND ShoppingCart.cartID ='" . $_SESSION["cartID"] . "';");
     echo "<ul>";

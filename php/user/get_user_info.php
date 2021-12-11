@@ -1,4 +1,3 @@
-
 <?php
 require 'php/connection.php';
 if (isset($_SESSION["email"])) {
@@ -21,4 +20,4 @@ if (isset($_SESSION["email"])) {
     mysqli_close($connection);
 } else {
     echo "<p>Parece que no estás loggeado.</p>";
-} ?>
+}
