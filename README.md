@@ -26,7 +26,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 ### MUST: pasarelA PAGO, ENVIAR CORREO, MANDAR POR EMAIL LA FACTURA. PHPMAILER PAGINA QUE INFORME DE QUE SE A AÑADIDO EL PRODUCTO.
 
 - [x] It shouldn't allow to add products to cart if you aren't logged or random token will be asigned.
-- [ ] Add a finish order button. When a order is finished, the shoppping cart must be deleted from the database.
+- [x] Add a finish order button. When a order is finished, the shoppping cart must be deleted from the database.
 - [ ] Add an account button to the navbar.
 - [ ] Create account views.
 - [ ] Unify load6_products and list_component
@@ -36,3 +36,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [ ] Style the menufilter.
 - [ ] Fix the frontend footer.
 - [ ] Pass the login and the sign up to modals (they'll must be added to the header, and being displayed or not with JS).
+
+### Ultimate wishlist before deadline (but actually, it is mostly like to complete this task after deadline)
+
+- [ ] Make PhpMailer finllaly works.
