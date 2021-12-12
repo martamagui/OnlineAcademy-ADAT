@@ -191,6 +191,10 @@ main, .banner .banner__column {
   padding-right: 5em;
 }
 
+#navName {
+  margin-left: 0.5vw;
+}
+
 .collapse-submenu {
   display: none;
   margin-top: 1.2vh;
@@ -202,7 +206,8 @@ main, .banner .banner__column {
   list-style: none;
 }
 
-.collapse-submenu p, .collapse-submenu ul li {
+.collapse-submenu p,
+.collapse-submenu ul li {
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
 }
