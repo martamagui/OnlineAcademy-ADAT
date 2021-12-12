@@ -28,6 +28,17 @@ if (!isset($_SESSION["email"])) {
 </div>
 <div class="orders__container">
     <table class="orders__list">
+        <tr class=orders__list__titles">
+            <td>
+                <span class="orders__item--id">Código de pedido</span>
+            </td>
+            <td>
+                <span class="orders__item--date">Fecha</span>
+            </td>
+            <td>
+                <span class="orders__item--price">Precio</span>
+            </td>
+        </tr>
         <?php
         include_once 'php/user/display_orders.php'
         ?>

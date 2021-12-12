@@ -9,7 +9,7 @@ if (isset($_SESSION["email"])) {
             $component = '
             <tr class=orders__list__item">
                 <td>
-                    <a href="order_detail.php"><span class="orders__item--id">' . $row["orderID"] . '</span></a>
+                    <a href="order_details.php?order=' . $row["orderID"] . '"><span class="orders__item--id">' . $row["orderID"] . '</span></a>
                 </td>
                 <td>
                     <span class="orders__item--date">' . $row["orderDate"] . '</span>
