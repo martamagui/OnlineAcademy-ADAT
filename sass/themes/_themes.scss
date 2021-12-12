@@ -16,6 +16,22 @@ main {
     color: $white;
   }
 }
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: $nav__bg;
+}
+a:hover {
+  color: $btn_dark;
+  span {
+    color: $btn_dark;
+  }
+}
+
 .banner {
   background-color: $white;
 }
@@ -31,29 +47,45 @@ input:disabled {
   background-color: $btn_disabled;
   color: $white;
 }
+
 .button-dark:hover {
   background-color: $btn_dark_hover;
 }
+
 .button-light {
   color: $btn_dark;
   background-color: $web-bg;
 }
+
 .button-light:hover {
   color: $white;
   background-color: $btn_light_hover;
 }
+
 .product__card {
   background-color: $white;
 }
+
 .divider {
   background-color: $divider;
 }
+
 #mail-btn {
   background-color: $web-bg;
 }
+
 .collapse-submenu {
   background-color: $nav__bg;
 }
+
 .wrapper {
   background-color: $white;
+}
+
+.orders__list__titles {
+  .orders__item--id,
+  .orders__item--date,
+  .orders__item--price {
+    color: $btn_dark;
+  }
 }

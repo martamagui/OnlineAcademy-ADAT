@@ -7,9 +7,9 @@ if (isset($_SESSION["email"])) {
     if ($result !== false && $result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $component = '
-            <tr class=orders__list__item">
+            <tr class="orders__list__item">
                 <td>
-                    <a href="order_details.php?order=' . $row["orderID"] . '&date=' . $row["orderDate"] . '"><span class="orders__item--id">' . $row["orderID"] . '</span></a>
+                    <a href="order_details.php?order=' . $row["orderID"] . '&date=' . $row["orderDate"] . '" class="orders__item--id">' . $row["orderID"] . '</a>
                 </td>
                 <td>
                     <span class="orders__item--date">' . $row["orderDate"] . '</span>

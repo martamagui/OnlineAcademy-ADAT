@@ -1,48 +1,53 @@
 <?php
 include_once 'header.php';
-include_once 'php/user/get_user_info.php';
-if (!isset($_SESSION["email"])) {
-    header('location: ../index.php');
-}
 ?>
-<div class="edit__container">
-    <h3>Editar información.</h3>
-    <form action="php/user/update_name.php" method="post">
-        <label for="email">Nombre</label>
-        <input type="text" placeholder="Nombre" name="firstName" id="firstName">
+<div class="profile__container">
+    <?php
+    include_once 'php/user/get_user_info.php';
+    if (!isset($_SESSION["email"])) {
+        header('location: ../index.php');
+    }
+    ?>
 
-        <label for="email">Apellidos:</label>
-        <input type="text" placeholder="Apellidos" name="lastName" id="lastName">
+    <div class="edit__container">
+        <h3>Editar información.</h3>
+        <form action="php/user/update_name.php" method="post">
+            <label for="email">Nombre</label>
+            <input type="text" placeholder="Nombre" name="firstName" id="firstName">
 
-        <input type="submit" value="Actualizar datos">
-    </form>
-    <form action="php/user/update_psw.php" method="post">
-        <label for="psw">Contraseña: </label>
-        <input type="password" placeholder="Contraseña" name="password" id="password" required>
+            <label for="email">Apellidos:</label>
+            <input type="text" placeholder="Apellidos" name="lastName" id="lastName">
 
-        <label for="psw-repeat">Repita la contraseña: </label>
-        <input type="password" placeholder="Repita Contraseña" name="psw-repeat" id="psw-repeat" required>
+            <input type="submit" value="Actualizar datos">
+        </form>
+        <form action="php/user/update_psw.php" method="post">
+            <label for="psw">Contraseña: </label>
+            <input type="password" placeholder="Contraseña" name="password" id="password" required>
 
-        <input type="submit" value="Cambiar contraseña">
-    </form>
-</div>
-<div class="orders__container">
-    <table class="orders__list">
-        <tr class=orders__list__titles">
-            <td>
-                <span class="orders__item--id">Código de pedido</span>
-            </td>
-            <td>
-                <span class="orders__item--date">Fecha</span>
-            </td>
-            <td>
-                <span class="orders__item--price">Precio</span>
-            </td>
-        </tr>
-        <?php
-        include_once 'php/user/display_orders.php'
-        ?>
-    </table>
+            <label for="psw-repeat">Repita la contraseña: </label>
+            <input type="password" placeholder="Repita Contraseña" name="psw-repeat" id="psw-repeat" required>
+
+            <input type="submit" value="Cambiar contraseña">
+        </form>
+    </div>
+    <div class="orders__container">
+        <table class="orders__list">
+            <tr class="orders__list__titles">
+                <td>
+                    <span class="orders__item--id">Código de pedido</span>
+                </td>
+                <td>
+                    <span class="orders__item--date">Fecha</span>
+                </td>
+                <td>
+                    <span class="orders__item--price">Precio</span>
+                </td>
+            </tr>
+            <?php
+            include_once 'php/user/display_orders.php'
+            ?>
+        </table>
+    </div>
 </div>
 
 <?php

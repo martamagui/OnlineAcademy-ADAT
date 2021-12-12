@@ -9,7 +9,7 @@ img {
 }
 
 * {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 a {
@@ -22,6 +22,19 @@ a {
 
 button {
   font-weight: 600;
+}
+
+.orders__item--id,
+.orders__item--date,
+.orders__item--price {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.orders__list__titles .orders__item--id,
+.orders__list__titles .orders__item--date,
+.orders__list__titles .orders__item--price {
+  font-size: 1.7em;
 }
 
 /*Abstrac*/
@@ -168,6 +181,10 @@ main, .banner .banner__column {
   padding: 4vh;
 }
 
+.footer .footer__container .column ul {
+  list-style: none;
+}
+
 .footer .footer__container .column h3 {
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
@@ -303,6 +320,17 @@ main {
   margin-right: 0.5vw;
 }
 
+.profile__container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 53%;
+}
+
+.profile__container .user__container {
+  padding: 4vh;
+}
+
 /*Themes*/
 .footer,
 main {
@@ -325,6 +353,24 @@ main {
 
 .nav span {
   color: #fff;
+}
+
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: #161616;
+}
+
+a:hover {
+  color: #8d2109;
+}
+
+a:hover span {
+  color: #8d2109;
 }
 
 .banner {
@@ -378,5 +424,11 @@ input:disabled {
 
 .wrapper {
   background-color: #fff;
+}
+
+.orders__list__titles .orders__item--id,
+.orders__list__titles .orders__item--date,
+.orders__list__titles .orders__item--price {
+  color: #8d2109;
 }
 /*# sourceMappingURL=main.css.map */

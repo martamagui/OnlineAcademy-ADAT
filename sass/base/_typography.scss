@@ -1,12 +1,25 @@
-*{
-    font-family: 'Merriweather Sans', sans-serif;
+* {
+  font-family: "Merriweather Sans", sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.banner__title{
-    font-size: 2.5em;
+.banner__title {
+  font-size: 2.5em;
 }
-button{
-    font-weight: 600;
+button {
+  font-weight: 600;
+}
+.orders__item--id,
+.orders__item--date,
+.orders__item--price {
+  font-size: 1em;
+  font-weight: 400;
+}
+.orders__list__titles {
+  .orders__item--id,
+  .orders__item--date,
+  .orders__item--price {
+    font-size: 1.7em;
+  }
 }

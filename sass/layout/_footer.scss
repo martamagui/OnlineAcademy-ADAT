@@ -11,6 +11,9 @@
     @extend %Dflex-row-center;
     .column {
       padding: 4vh;
+      ul {
+        list-style: none;
+      }
       h3 {
         padding: {
           top: 1.5vh;
