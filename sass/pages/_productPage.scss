@@ -13,8 +13,22 @@
 }
 
 .wrapper {
+  align-self: center;
+  margin-top: 1vh;
   width: auto;
   padding: 1vw;
   align-self: center;
   box-shadow: 2px 2px 10px 1px #1616161f;
+  .courses__filter {
+    @extend %Dflex-row-center;
+    select {
+      margin: {
+        left: 0.5vw;
+        right: 0.5vw;
+      }
+    }
+  }
+  form {
+    @extend %Dflex-row-spbwt-center;
+  }
 }
