@@ -1,0 +1,22 @@
+.login__form {
+  margin-top: 2vh;
+  align-self: center;
+  @extend %Dflex-col-center;
+  width: 53%;
+  .form__container {
+    align-self: center;
+    padding: {
+      top: 5vh;
+      bottom: 5vh;
+    }
+    margin-top: 2vh;
+    @extend %Dflex-col-start;
+    width: 50%;
+    .form__item {
+      margin: {
+        top: 1.5vh;
+        bottom: 1.5vh;
+      }
+    }
+  }
+}

@@ -14,6 +14,8 @@ img {
 
 a {
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .banner__title {
@@ -34,11 +36,15 @@ button {
 .orders__list__titles .orders__item--id,
 .orders__list__titles .orders__item--date,
 .orders__list__titles .orders__item--price {
-  font-size: 1.7em;
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 2.2em;
 }
 
 /*Abstrac*/
-main, .banner .banner__column, .profile__container .user__container form,
+main, .banner .banner__column, .login__form .form__container, .signup__form form, .signup__form .container__signin, .profile__container .user__container form,
 .profile__container .edit__container form,
 .profile__container .orders__container form {
   display: -webkit-box;
@@ -53,7 +59,7 @@ main, .banner .banner__column, .profile__container .user__container form,
           justify-content: start;
 }
 
-.product__card, .footer {
+.product__card, .footer, .login__form, .signup__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +196,16 @@ input[type="text"]:focus {
   margin-top: 2vh;
 }
 
+.orders__list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.orders__list tr td {
+  border: 1px solid #ddd;
+  padding: 0.5vh;
+}
+
 /*Layout*/
 .footer {
   width: 100%;
@@ -303,6 +319,55 @@ main {
 
 .landing__main__container h2 {
   padding-bottom: 2vh;
+}
+
+.login__form {
+  margin-top: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 53%;
+}
+
+.login__form .form__container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 2vh;
+  width: 50%;
+}
+
+.login__form .form__container .form__item {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.signup__form {
+  margin-top: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 53%;
+}
+
+.signup__form form {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 2vh;
+  width: 50%;
+}
+
+.signup__form .container__signin {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+  padding-bottom: 5vh;
 }
 
 .container__products--and--filters {
@@ -475,12 +540,17 @@ input:disabled {
 .orders__list__titles .orders__item--id,
 .orders__list__titles .orders__item--date,
 .orders__list__titles .orders__item--price {
-  color: #8d2109;
+  color: #fff;
+}
+
+.orders__list__titles {
+  background-color: #8d2109;
 }
 
 .user__container,
 .edit__container,
-.orders__container {
+.orders__container,
+.signup__form {
   background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

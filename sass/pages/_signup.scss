@@ -1,0 +1,24 @@
+.signup__form {
+  margin-top: 2vh;
+  align-self: center;
+  @extend %Dflex-col-center;
+  width: 53%;
+  form {
+    align-self: center;
+    padding: {
+      top: 5vh;
+      bottom: 5vh;
+    }
+    margin-top: 2vh;
+    @extend %Dflex-col-start;
+    width: 50%;
+  }
+  .container__signin {
+    align-self: center;
+    @extend %Dflex-col-start;
+    width: 50%;
+    padding: {
+      bottom: 5vh;
+    }
+  }
+}

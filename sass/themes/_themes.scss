@@ -95,12 +95,16 @@ input:disabled {
   .orders__item--id,
   .orders__item--date,
   .orders__item--price {
-    color: $btn_dark;
+    color: $white;
   }
+}
+.orders__list__titles {
+  background-color: $btn_dark;
 }
 
 .user__container,
 .edit__container,
-.orders__container {
+.orders__container,
+.signup__form {
   background-color: $white;
 }
