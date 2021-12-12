@@ -6,6 +6,7 @@ include_once 'header.php';
 if (!isset($_SESSION["email"])) {
     header('location: ../index.php');
 }
+include_once 'php/user/display_order_details.php';
 ?>
 <div class="order__information__container">
     <div class="order__information__header">
@@ -21,9 +22,6 @@ if (!isset($_SESSION["email"])) {
             </li>
         </ul>
     </div>
-
-
-
 </div>
 
 <?php
