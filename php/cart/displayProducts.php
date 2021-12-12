@@ -1,5 +1,6 @@
 <?php
 require 'php/connection.php';
+
 if (isset($_SESSION["email"]) && isset($_SESSION["cartID"])) {
     $user = $_SESSION["email"];
     $result = $connection->query("SELECT * FROM ShoppingCart, ShoppingCartDetails, Courses WHERE ShoppingCart.cartID = ShoppingCartDetails.cartIDfk AND ShoppingCartDetails.courseIDfk =  Courses.courseID AND ShoppingCart.cartID ='" . $_SESSION["cartID"] . "';");
@@ -13,6 +14,7 @@ if (isset($_SESSION["email"]) && isset($_SESSION["cartID"])) {
             echo "<input type='submit' value='Eliminar' class='basic__button button-dark''/>";
             echo "</form></li>";
         }
+        echo "</ul>";
     } else {
         unset($_SESSION["canOrder"]);
         echo "<p>No hay productos añadidos aún</p>";

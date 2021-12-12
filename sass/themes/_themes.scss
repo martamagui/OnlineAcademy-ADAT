@@ -9,8 +9,8 @@ main {
     list-style: none;
     color: $white;
   }
-  a:hover{
-    color:  $web-bg;
+  a:hover {
+    color: $web-bg;
   }
   span {
     color: $white;
@@ -25,6 +25,10 @@ main {
 }
 .button-dark {
   background-color: $btn_dark;
+  color: $white;
+}
+input:disabled {
+  background-color: $btn_disabled;
   color: $white;
 }
 .button-dark:hover {
@@ -47,6 +51,6 @@ main {
 #mail-btn {
   background-color: $web-bg;
 }
-.collapse-submenu{
+.collapse-submenu {
   background-color: $nav__bg;
 }

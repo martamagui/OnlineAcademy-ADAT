@@ -318,6 +318,11 @@ main {
   color: #fff;
 }
 
+input:disabled {
+  background-color: #6d6d6d;
+  color: #fff;
+}
+
 .button-dark:hover {
   background-color: #ac4832;
 }

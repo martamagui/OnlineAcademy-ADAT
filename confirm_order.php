@@ -6,6 +6,8 @@ include_once 'header.php';
     <div class="banner__column"><img src="img/tyOrder.jpg" alt="Thanks image"></div>
     <div class="banner__column">
         <h1>Gracias por tu pedido.</h1>
+        </br>
+        <span>Recibiras por email tus cursos.</span>
     </div>
 </div>
 
