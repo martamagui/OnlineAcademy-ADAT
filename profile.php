@@ -1,6 +1,9 @@
 <?php
 include_once 'header.php';
 include_once 'php/user/get_user_info.php';
+if (!isset($_SESSION["email"])) {
+    header('location: ../index.php');
+}
 ?>
 <div class="edit__container">
     <h3>Editar información.</h3>
@@ -23,7 +26,13 @@ include_once 'php/user/get_user_info.php';
         <input type="submit" value="Cambiar contraseña">
     </form>
 </div>
-<div class="orders__container"></div>
+<div class="orders__container">
+    <table class="orders__list">
+        <?php
+        include_once 'php/user/display_orders.php'
+        ?>
+    </table>
+</div>
 
 <?php
 include_once 'footer.php'
