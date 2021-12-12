@@ -1,0 +1,27 @@
+input[type="password"],
+input[type="text"] {
+  padding: {
+    top: 1vh;
+    bottom: 1vh;
+    left: 0.5vh;
+    right: 0.5vh;
+  }
+  border: none;
+  border-bottom: 2px solid $btn_dark_hover;
+}
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  background-color: $divider;
+}
+.form__item {
+  margin: {
+    bottom: 2vh;
+  }
+}
+.form__container {
+  margin: {
+    bottom: 2vh;
+    top: 2vh;
+  }
+}

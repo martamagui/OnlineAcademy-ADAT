@@ -81,11 +81,26 @@ input:disabled {
 .wrapper {
   background-color: $white;
 }
-
+.user__container {
+  background: linear-gradient(
+    $profile__banner--bg1 0%,
+    $profile__banner--bg2 100%
+  );
+  h1,
+  h2 {
+    color: $white;
+  }
+}
 .orders__list__titles {
   .orders__item--id,
   .orders__item--date,
   .orders__item--price {
     color: $btn_dark;
   }
+}
+
+.user__container,
+.edit__container,
+.orders__container {
+  background-color: $white;
 }

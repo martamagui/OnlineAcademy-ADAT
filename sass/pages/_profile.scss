@@ -1,7 +1,14 @@
 .profile__container {
   align-self: center;
   width: 53%;
-  .user__container {
+  .user__container,
+  .edit__container,
+  .orders__container {
     padding: 4vh;
+    margin-top: 2vh;
+    form {
+      @extend %Dflex-col-start;
+      width: 50%;
+    }
   }
 }

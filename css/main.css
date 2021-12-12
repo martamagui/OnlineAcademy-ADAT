@@ -38,7 +38,9 @@ button {
 }
 
 /*Abstrac*/
-main, .banner .banner__column {
+main, .banner .banner__column, .profile__container .user__container form,
+.profile__container .edit__container form,
+.profile__container .orders__container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +163,31 @@ main, .banner .banner__column {
 .product__card .product__card__info {
   min-height: 22vh;
   padding: 0.5vw;
+}
+
+input[type="password"],
+input[type="text"] {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+  border: none;
+  border-bottom: 2px solid #ac4832;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  background-color: #a3a3a3;
+}
+
+.form__item {
+  margin-bottom: 2vh;
+}
+
+.form__container {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 /*Layout*/
@@ -327,8 +354,17 @@ main {
   width: 53%;
 }
 
-.profile__container .user__container {
+.profile__container .user__container,
+.profile__container .edit__container,
+.profile__container .orders__container {
   padding: 4vh;
+  margin-top: 2vh;
+}
+
+.profile__container .user__container form,
+.profile__container .edit__container form,
+.profile__container .orders__container form {
+  width: 50%;
 }
 
 /*Themes*/
@@ -426,9 +462,25 @@ input:disabled {
   background-color: #fff;
 }
 
+.user__container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#3f3f3f));
+  background: linear-gradient(#222222 0%, #3f3f3f 100%);
+}
+
+.user__container h1,
+.user__container h2 {
+  color: #fff;
+}
+
 .orders__list__titles .orders__item--id,
 .orders__list__titles .orders__item--date,
 .orders__list__titles .orders__item--price {
   color: #8d2109;
+}
+
+.user__container,
+.edit__container,
+.orders__container {
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
