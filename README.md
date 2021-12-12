@@ -30,13 +30,13 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - [x] Add an account button to the navbar.
 - [x] Create account views.
 - [x] Creat inserts of the detail order.
-- [ ] Disable button if a user has already bought this course
+- [x] Disable button if a user has already bought this course
 - [ ] Check password lenght.
 - [ ] Unify load6_products and list_component
 
 ### FrontEnd
 
-- [ ] Style the menufilter.
+- [x] Style the menufilter.
 - [ ] Fix the frontend footer.
 - [ ] Pass the login and the sign up to modals (they'll must be added to the header, and being displayed or not with JS).
 
