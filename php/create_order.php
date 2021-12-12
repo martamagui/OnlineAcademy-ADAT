@@ -11,6 +11,7 @@ $resultPickUpProducts = $connection->query("SELECT * FROM ShoppingCartDetails WH
 if ($result !== false && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $resultInsertOrderDetail =  $connection->query("INSERT INTO OrderDetails(courseIDfk , orderIDfk) VALUES (" . $row["courseIDfk"] . ",'" . $orderID . "')");
+        $resultInsertUserOrder =  $connection->query("INSERT INTO UserCourses(courseIDfk , emailFk) VALUES (" . $row["courseIDfk"] . ",'" . $user . "')");
     }
 }
 
