@@ -374,13 +374,11 @@ from
 INSERT INTO
   ShoppingCart(cartId, cartDate, emailFk)
 VALUES
-  ('16adsasa', '2021-11-19', 'marta@gmail.com'),
   ('1234456', '2021-11-19', 'ana@gmail.com');
 INSERT INTO
   ShoppingCartDetails(cartIDfk, courseIDfk)
 values
-  ('1234456', 1),('1234456', 2),('1234456', 3),
-  ('16adsasa', 32),('16adsasa', 30);
+  ('1234456', 1),('1234456', 2),('1234456', 3);
 SELECT
   *
 FROM

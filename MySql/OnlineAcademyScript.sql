@@ -48,3 +48,10 @@ CREATE TABLE ShoppingCartDetails(
   foreign key(courseIDfk) references Courses (courseID) ON DELETE no action ON UPDATE CASCADE,
   foreign key(cartIDfk) references ShoppingCart (cartID) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 COLLATE = latin1_spanish_ci;
+CREATE TABLE UserCourses(
+  emailFk varchar(355) NOT NULL,
+  courseIDfk integer NOT NULL,
+  primary key(emailFk, courseIDfk),
+  foreign key(emailFk) references Users (email) ON DELETE CASCADE ON UPDATE CASCADE,
+  foreign key(courseIDfk) references Courses (courseID) ON DELETE no action ON UPDATE CASCADE
+) ENGINE = InnoDB DEFAULT CHARSET = latin1 COLLATE = latin1_spanish_ci;
