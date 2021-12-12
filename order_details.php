@@ -1,6 +1,8 @@
 <?php
 include_once 'header.php';
-include_once 'php/user/get_user_info.php';
+?>
+<h1>Detalles del pedido</h1>
+<?php
 if (!isset($_SESSION["email"])) {
     header('location: ../index.php');
 }
