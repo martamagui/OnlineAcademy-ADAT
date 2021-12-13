@@ -43,6 +43,10 @@ h2 {
   font-size: 2.2em;
 }
 
+.product__card h2 {
+  font-size: 1.3em;
+}
+
 /*Abstrac*/
 main, .banner .banner__column, .login__form .form__container, .signup__form form, .signup__form .container__signin, .profile__container .user__container form,
 .profile__container .edit__container form,
@@ -59,7 +63,7 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
           justify-content: start;
 }
 
-.product__card, .footer, .login__form, .signup__form {
+.product__card, .footer, .login__form, .signup__form, .order__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +134,13 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.order__container .cart__product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*Components*/
@@ -432,6 +443,28 @@ main {
   width: 50%;
 }
 
+.order__container {
+  margin-top: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 53%;
+  padding: 2vw;
+}
+
+.order__container h1 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.order__container ul {
+  list-style: none;
+}
+
+.order__container .cart__product {
+  width: auto;
+}
+
 /*Themes*/
 .footer,
 main {
@@ -550,6 +583,7 @@ input:disabled {
 .user__container,
 .edit__container,
 .orders__container,
+.order__container,
 .signup__form {
   background-color: #fff;
 }

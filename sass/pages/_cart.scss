@@ -1,0 +1,18 @@
+.order__container {
+  margin-top: 2vh;
+  align-self: center;
+  @extend %Dflex-col-center;
+  width: 53%;
+  padding: 2vw;
+  h1{
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+  }
+  ul{
+    list-style: none;
+  }
+  .cart__product{
+    width: auto;
+    @extend %DGrid-5;
+  }
+}

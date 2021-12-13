@@ -22,9 +22,14 @@ if (isset($_SESSION["email"])) {
         }
     } else {
         unset($_SESSION["canOrder"]);
-        echo '<tr class=orders__list__item">
-        <td>
+        echo '
+        <tr class=orders__list__item">
+            <td>
                 <span class="orders__item--id"> Aún no has realizado ningún pedido.</span>
+            </td>
+            <td>
+            </td>
+            <td>
             </td>
         </tr>';
     }

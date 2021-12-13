@@ -24,8 +24,9 @@ if (isset($_GET["order"]) && isset($_GET["date"])) {
                             <span>' . number_format((float)$row["price"], 2, '.', '') . ' €</span>
                         </li>
                     </ul> ';
-            echo $orderComponent . ' </div>';
+            echo $orderComponent . ' </div> ';
         }
+        echo "</div>";
     }
     $resultTotal = $connection->query(("Select * FROM Orders WHERE orderID='" . $_GET["order"] . "';"));
     if ($resultTotal !== false && $resultTotal->num_rows > 0) {

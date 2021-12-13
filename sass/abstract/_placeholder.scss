@@ -31,3 +31,7 @@
   justify-content: space-between;
   align-items: center;
 }
+%DGrid-5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

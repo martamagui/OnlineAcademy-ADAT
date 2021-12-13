@@ -10,8 +10,8 @@ if (isset($_SESSION["email"]) && isset($_SESSION["cartID"])) {
         while ($row = $result->fetch_assoc()) {
             echo "<li><form class='cart__product' action='php/deleteProduct.php?course=" . $row["courseID"] . "&cartId=" . $row["cartIDfk"] . "'  method='post'>";
             echo "<a href=''><img src='img/" . $row["imgName"] . "' /></a>";
-            echo "<h4> " . $row["title"] . "</h4> <span> " . $row["teacher"] . "</span> - " . number_format((float)$row["price"], 2, '.', '') . " €<br>";
-            echo "<input type='submit' value='Eliminar' class='basic__button button-dark''/>";
+            echo "<h4> " . $row["title"] . "</h4> <span> " . $row["teacher"] . "</span>" . number_format((float)$row["price"], 2, '.', '') . " €<br>";
+            echo "<div><input type='submit' value='Eliminar' class='basic__button button-dark''/></div>";
             echo "</form></li>";
         }
         echo "</ul>";
