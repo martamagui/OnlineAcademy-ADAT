@@ -24,8 +24,44 @@
   .basic__button{
     margin-top: 1vh;
   }
-  .price__container{
-    width: 20%;
-    align-self: flex-end;  
+}
+.price__container{
+  width: 20%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.form--payment, .pay__form__date, .pay__form__date__item{
+  display: flex;
+  flex-direction: column;
+}
+.form--payment{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 53%;
+  label, input, .icon-container{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
   }
+  .icon-container{
+    width: 53%;
+    @extend %Dflex-row-spbwt-center;
+    i{
+      font-size: 2em;
+    }
+  }
+}
+.order__cart{
+  h1{
+    margin-bottom: 2vh;
+  }
+  span, h3{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  
+}
+.banner__order{
+  min-height: 75vh;
 }

@@ -4,14 +4,13 @@ include_once 'header.php'
 <div class="order__container">
     <div class="order__cart">
         <h1>Pagar</h1>
-        <h2>¿Está todo bien? </br>
             <?php
             include_once 'php/cart/totalAmount.php';
-            echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
+            echo  "<span class='final--price'>" . number_format((float)$totalPrice, 2, '.', '') . " €</span>";
             ?>
         </h2>
         <form action="confirm_order.php" method="post">
-            <div class="">
+            <div class="form--payment">
                 <h3>Payment</h3>
                 <label for="fname">Métodos de pago aceptados</label>
                 <div class="icon-container">

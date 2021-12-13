@@ -48,7 +48,7 @@ h2 {
 }
 
 .final--price {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 
@@ -125,7 +125,7 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
           justify-content: center;
 }
 
-.nav, .nav .nav__list, .wrapper form {
+.nav, .nav .nav__list, .wrapper form, .form--payment .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +448,17 @@ main {
   width: 50%;
 }
 
+.order__information__header h2,
+.order__information__header h3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.price {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
 .order__container {
   margin-top: 2vh;
   -ms-flex-item-align: center;
@@ -483,10 +494,62 @@ main {
   margin-top: 1vh;
 }
 
-.order__container .price__container {
+.price__container {
   width: 20%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.form--payment, .pay__form__date, .pay__form__date__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form--payment {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 53%;
+}
+
+.form--payment label, .form--payment input, .form--payment .icon-container {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.form--payment .icon-container {
+  width: 53%;
+}
+
+.form--payment .icon-container i {
+  font-size: 2em;
+}
+
+.order__cart h1 {
+  margin-bottom: 2vh;
+}
+
+.order__cart span, .order__cart h3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.banner__order {
+  min-height: 75vh;
 }
 
 /*Themes*/

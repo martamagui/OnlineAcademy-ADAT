@@ -6,12 +6,11 @@ include_once 'header.php'
   include_once 'php/order_step1.php'
   ?>
   <div class="order__cart">
-    <h1>Carrito</h1>
     <h2>¿Está todo bien?</h2>
     <?php
     include_once 'php/cart/displayProducts.php';
     include_once 'php/cart/totalAmount.php';
-    echo  "<p>" . number_format((float)$totalPrice, 2, '.', '') . " €</p>";
+    echo  " <div class='price__container'><span class='final--price'>" . number_format((float)$totalPrice, 2, '.', '') . " €</span>";
     ?>
     <form action='pay_order.php' method='post'>
       <input type='submit' value='Pagar' class='basic__button button-dark''/>
@@ -21,6 +20,7 @@ include_once 'header.php'
       header('location: ../index.php');
     }
     ?>
+    </div>
   </div>
 </div>
 
