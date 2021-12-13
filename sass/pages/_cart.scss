@@ -12,7 +12,11 @@
     list-style: none;
   }
   .cart__product{
+    margin: 0.2vw;
     width: auto;
     @extend %DGrid-5;
+    .cart__product--item{
+      align-self: center;
+    }
   }
 }

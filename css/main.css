@@ -462,7 +462,14 @@ main {
 }
 
 .order__container .cart__product {
+  margin: 0.2vw;
   width: auto;
+}
+
+.order__container .cart__product .cart__product--item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*Themes*/
