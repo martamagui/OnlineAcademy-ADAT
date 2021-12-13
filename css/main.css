@@ -47,6 +47,11 @@ h2 {
   font-size: 1.3em;
 }
 
+.final--price {
+  font-size: 2em;
+  font-weight: 600;
+}
+
 /*Abstrac*/
 main, .banner .banner__column, .login__form .form__container, .signup__form form, .signup__form .container__signin, .profile__container .user__container form,
 .profile__container .edit__container form,
@@ -458,6 +463,8 @@ main {
 }
 
 .order__container ul {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   list-style: none;
 }
 
@@ -470,6 +477,16 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.order__container .basic__button {
+  margin-top: 1vh;
+}
+
+.order__container .price__container {
+  width: 20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 /*Themes*/

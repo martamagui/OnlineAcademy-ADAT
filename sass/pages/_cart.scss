@@ -9,6 +9,8 @@
       margin-bottom: 1vh;
   }
   ul{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     list-style: none;
   }
   .cart__product{
@@ -18,5 +20,12 @@
     .cart__product--item{
       align-self: center;
     }
+  }
+  .basic__button{
+    margin-top: 1vh;
+  }
+  .price__container{
+    width: 20%;
+    align-self: flex-end;  
   }
 }
