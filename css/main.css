@@ -208,6 +208,33 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
   padding: 0.5vw;
 }
 
+@media (max-width: 991.98px) {
+  .product__card {
+    width: 25vw;
+    border-radius: 0.3vw;
+  }
+  .product__card img {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .product__card {
+    width: 70vw;
+    border-radius: 1vw;
+  }
+  .product__card img {
+    width: 70vw;
+  }
+  .product__card .product__card__info {
+    min-height: 22vh;
+    padding: 2vw;
+  }
+  .product__card__info span, .product__card__info a {
+    display: none;
+  }
+}
+
 input[type="password"],
 input[type="text"] {
   padding-top: 1vh;
@@ -447,6 +474,22 @@ main {
 .wrapper .courses__filter select {
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+}
+
+@media (max-width: 575.98px) {
+  .products__container {
+    -ms-grid-row-align: center;
+        align-self: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1vw;
+    padding: 2vw;
+  }
 }
 
 .profile__container {
