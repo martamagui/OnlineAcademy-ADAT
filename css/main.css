@@ -52,10 +52,18 @@ h2 {
   font-weight: 600;
 }
 
+.detail__title {
+  font-size: 2.5em;
+}
+
+.detail_rate {
+  font-size: 1.8em;
+}
+
 /*Abstrac*/
 main, .banner .banner__column, .login__form .form__container, .signup__form form, .signup__form .container__signin, .profile__container .user__container form,
 .profile__container .edit__container form,
-.profile__container .orders__container form {
+.profile__container .orders__container form, .detail__container .detail__wrapper .detail__wrapper--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +76,7 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
           justify-content: start;
 }
 
-.product__card, .footer, .login__form, .signup__form, .order__container {
+.product__card, .footer, .login__form, .signup__form, .order__container, .detail__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +131,19 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.detail__container .detail__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .nav, .nav .nav__list, .wrapper form, .form--payment .icon-container {
@@ -552,6 +573,49 @@ main {
   min-height: 75vh;
 }
 
+.detail__container {
+  width: 53%;
+  margin-top: 3vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 53%;
+  padding: 8vh;
+}
+
+.detail__container .detail__title {
+  padding-bottom: 4vh;
+}
+
+.detail__container .detail__block {
+  padding-left: 5vh;
+  padding-right: 8vh;
+}
+
+.detail__container .detail__wrapper {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.detail__container .detail__wrapper .detail__wrapper--text {
+  padding-left: 1vw;
+  width: 50%;
+}
+
+.detail__container .detail__wrapper .detail__wrapper--text .detail__subtitle, .detail__container .detail__wrapper .detail__wrapper--text .detail_rate {
+  padding-bottom: 1.5vh;
+}
+
+.detail__container .detail__description {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.detail__container .detail__img {
+  height: 25vh;
+  width: 25vh;
+}
+
 /*Themes*/
 .footer,
 main {
@@ -671,7 +735,8 @@ input:disabled {
 .edit__container,
 .orders__container,
 .order__container,
-.signup__form {
+.signup__form,
+.detail__container {
   background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
