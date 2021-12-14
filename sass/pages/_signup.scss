@@ -22,3 +22,19 @@
     }
   }
 }
+@media (max-width: 991.98px) {
+  .signup__form {
+    width: 85%;
+    form , .container__signin{
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 575.98px){
+  .signup__form {
+    width: 85%;
+    form , .container__signin{
+      width: 80%;
+    }
+  }
+}

@@ -14,3 +14,14 @@
     transform: translateY(3px);
   }
 }
+@media (max-width: 575.98px){
+  .banner__button {
+    min-width: 25vw;
+    padding: 2vw;
+  }
+  .basic__button {
+    min-width: 25vw;
+    padding: 2vw;
+  }
+  
+}
