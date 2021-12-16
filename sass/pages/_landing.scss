@@ -28,3 +28,17 @@
     padding-bottom: 2vh;
   }
 }
+
+@media (max-width: 575.98px){
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    .banner__column {
+      width: 80vw;
+      img {
+        width: 60vw;
+      }
+    }
+  }
+}

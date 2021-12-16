@@ -13,15 +13,22 @@ function printProduct($courseId, $title, $teacher, $courseDes, $rate, $category,
 {
     $product = "<div class='detail__container'>
     <h1 class='detail__title'>$title</h1>
-    <h2 class='detail__subtitle' id='teacher'>$teacher</h2>
-
-    <span class='detail_rate'>" . number_format((float)$rate, 2, '.', '') . " ⭐</span>
-    <a href='courses_list.php?value=$category'>$category</a>
+    <div class='detail__block'>
+    <div class='detail__wrapper'>
     <img src='img/$imgName' alt='course_img' class='detail__img'>
+        <div class='detail__wrapper--text' > 
+            <h2 class='detail__subtitle' id='teacher'>$teacher</h2>
+            <span class='detail_rate'>" . number_format((float)$rate, 2, '.', '') . " ⭐</span>
+            <a href='courses_list.php?value=$category'>$category</a>
+        </div>
+        
+    </div>
+    
     <p class='detail__description'>$courseDes</p>
     <form action='php/getProduct.php?course=$courseId' method='post' class ='product__card'>
     <input type='submit' value='" . number_format((float)$price, 2, '.', '') . " €' class='basic__button button-dark''/>
     </form>
+    </div>
     </div>";
     echo $product;
 }

@@ -25,7 +25,6 @@ if (isset($_GET["order"]) && isset($_GET["date"])) {
                     </ul> ';
             echo $orderComponent;
         }
-       
     }
     $resultTotal = $connection->query(("Select * FROM Orders WHERE orderID='" . $_GET["order"] . "';"));
     if ($resultTotal !== false && $resultTotal->num_rows > 0) {

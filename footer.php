@@ -10,7 +10,7 @@
                 <li class="list__item"><a href="courses_list.php?value=Reciclaje">Reciclaje</a></li>
             </ul>
         </div>
-        <div class="column">
+        <div class="column" id="footer-login">
             <h3>Accede a tu cuenta</h3>
             <a href="login_form.php" id="login">Login</a>
         </div>

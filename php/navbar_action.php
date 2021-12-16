@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["userName"])) {
-    echo "<span class='nav__item'>¡Hola  " . $_SESSION["userName"] . "!</span>";
+    echo "<span class='nav__item' id='Greeting'>¡Hola  " . $_SESSION["userName"] . "!</span>";
     $element = ' 
     <li class="nav__item " id="nav-profile">
     <a href="profile.php" id="profile-icon">

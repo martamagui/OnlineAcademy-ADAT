@@ -1,13 +1,11 @@
 .nav {
   @extend %Dflex-row-spbwt-center;
-  background-color: aqua;
   .nav__list {
     @extend %Dflex-row-spbwt-center;
     .nav__item {
       padding: 1em;
       list-style-type: none;
     }
-
     #nav-shopping-cart-img {
       width: 2em;
     }
@@ -37,4 +35,17 @@
       bottom: 0.5vw;
     }
   }
+}
+@media (max-width: 575.98px){
+  #navName, #Greeting, .collapse-submenu {
+    display: none;
+  }
+  .nav__item {
+    margin: 0px;
+    padding: 0px;
+  }
+  #nav-category {
+    display: none;
+  }
+  
 }

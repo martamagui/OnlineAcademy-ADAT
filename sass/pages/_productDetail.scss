@@ -1,0 +1,36 @@
+.detail__container{
+    width: 53%;
+    margin-top: 3vh;
+    align-self: center;
+    @extend %Dflex-col-center;
+    width: 53%;
+    padding: 8vh;
+    .detail__title{
+        padding-bottom: 4vh;
+    }
+    .detail__block{
+        padding-left: 5vh;
+        padding-right: 8vh;
+    }
+    .detail__wrapper{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        @extend %Dflex-row-start;
+        .detail__wrapper--text{
+            padding-left: 1vw;
+            @extend %Dflex-col-start;
+            width: 50%;
+            .detail__subtitle, .detail_rate{
+                padding-bottom: 1.5vh;
+            }
+        }
+    }
+    .detail__description{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .detail__img{
+        height: 25vh;
+        width: 25vh;
+    }
+}
