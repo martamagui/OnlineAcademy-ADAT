@@ -24,9 +24,9 @@
   margin-bottom: 2vh;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .profile__container {
-    width: 90%;
+    width: 80%;
     .user__container,
     .edit__container,
     .orders__container {
@@ -37,11 +37,16 @@
         display: none;
       }
       table {
-        width: 80%;
+        width: 100%;
       }
       form {
         width: 100%;
       }
     }
+  }
+}
+@media (max-width: 575.98px) {
+  .profile__container {
+    width: 90%;
   }
 }

@@ -638,9 +638,9 @@ main {
   margin-bottom: 2vh;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .profile__container {
-    width: 90%;
+    width: 80%;
   }
   .profile__container .user__container,
   .profile__container .edit__container,
@@ -659,12 +659,18 @@ main {
   .profile__container .user__container table,
   .profile__container .edit__container table,
   .profile__container .orders__container table {
-    width: 80%;
+    width: 100%;
   }
   .profile__container .user__container form,
   .profile__container .edit__container form,
   .profile__container .orders__container form {
     width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile__container {
+    width: 90%;
   }
 }
 
