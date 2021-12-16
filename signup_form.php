@@ -24,8 +24,9 @@ include_once 'header.php'
   </form>
 
   <div class="container__signin">
-    <p class="form__item">Already have an account? <a href="login_form.php">Sign in</a>.</p>
-    <p class="form__item">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <p class="form__item">Al crear una cuanta admites haber leído los términos de privacidad. <a href="#">Terms & Privacy</a>.</p>
+    <p class="form__item">¿Ya tienes una cuenta? <a href="login_form.php">Entrar</a>.</p>
   </div>
 </div>
 <?php
