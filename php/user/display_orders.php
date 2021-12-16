@@ -11,10 +11,10 @@ if (isset($_SESSION["email"])) {
                 <td>
                     <a href="order_details.php?order=' . $row["orderID"] . '&date=' . $row["orderDate"] . '" class="orders__item--id">' . $row["orderID"] . '</a>
                 </td>
-                <td>
+                <td class="orders__item--price">
                     <span class="orders__item--date">' . $row["orderDate"] . '</span>
                 </td>
-                <td>
+                <td class="orders__item--price">
                     <span class="orders__item--price">' . number_format((float)$row["totalPrice"], 2, '.', '') . '€</span>
                 </td>
             </tr>';

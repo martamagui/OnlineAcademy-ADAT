@@ -23,3 +23,25 @@
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
+
+@media (max-width: 575.98px) {
+  .profile__container {
+    width: 90%;
+    .user__container,
+    .edit__container,
+    .orders__container {
+      padding: 4vh;
+      margin-top: 2vh;
+      .orders__item--date,
+      .orders__item--price {
+        display: none;
+      }
+      table {
+        width: 80%;
+      }
+      form {
+        width: 100%;
+      }
+    }
+  }
+}

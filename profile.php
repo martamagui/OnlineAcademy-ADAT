@@ -36,10 +36,10 @@ include_once 'header.php';
                 <td>
                     <span class="orders__item--id">Código de pedido</span>
                 </td>
-                <td>
+                <td class="orders__item--price">
                     <span class="orders__item--date">Fecha</span>
                 </td>
-                <td>
+                <td class="orders__item--price">
                     <span class="orders__item--price">Precio</span>
                 </td>
             </tr>

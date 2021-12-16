@@ -67,6 +67,10 @@ h2 {
   .cart__product--item h4 {
     font-size: 1.3em;
   }
+  table {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
 }
 
 /*Abstrac*/
@@ -632,6 +636,36 @@ main {
 .price {
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+@media (max-width: 575.98px) {
+  .profile__container {
+    width: 90%;
+  }
+  .profile__container .user__container,
+  .profile__container .edit__container,
+  .profile__container .orders__container {
+    padding: 4vh;
+    margin-top: 2vh;
+  }
+  .profile__container .user__container .orders__item--date,
+  .profile__container .user__container .orders__item--price,
+  .profile__container .edit__container .orders__item--date,
+  .profile__container .edit__container .orders__item--price,
+  .profile__container .orders__container .orders__item--date,
+  .profile__container .orders__container .orders__item--price {
+    display: none;
+  }
+  .profile__container .user__container table,
+  .profile__container .edit__container table,
+  .profile__container .orders__container table {
+    width: 80%;
+  }
+  .profile__container .user__container form,
+  .profile__container .edit__container form,
+  .profile__container .orders__container form {
+    width: 100%;
+  }
 }
 
 .order__container {
