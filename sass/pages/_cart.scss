@@ -69,6 +69,16 @@
 .banner__order {
   min-height: 75vh;
 }
+
+@media (max-width: 991.98px) {
+  .order__container {
+    width: 90%;
+    .order__payment {
+      margin: 4vh;
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   .order__container {
     width: 90%;

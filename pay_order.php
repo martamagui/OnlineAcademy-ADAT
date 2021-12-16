@@ -2,12 +2,12 @@
 include_once 'header.php'
 ?>
 <div class="order__container">
-    <div class="order__cart">
+    <div class="order__cart order__payment">
         <h1>Pagar</h1>
-            <?php
-            include_once 'php/cart/totalAmount.php';
-            echo  "<span class='final--price'>" . number_format((float)$totalPrice, 2, '.', '') . " €</span>";
-            ?>
+        <?php
+        include_once 'php/cart/totalAmount.php';
+        echo  "<span class='final--price'>" . number_format((float)$totalPrice, 2, '.', '') . " €</span>";
+        ?>
         </h2>
         <form action="confirm_order.php" method="post">
             <div class="form--payment">
