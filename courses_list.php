@@ -3,7 +3,7 @@ include_once 'header.php'
 ?>
 <div class="container__products--and--filters">
     <div class="wrapper">
-        <form action="courses_list.php" method="post">
+        <form class="courses__form" action="courses_list.php" method="post">
             <div class="courses__filter">
                 <h4>Filtrar por categoría:</h4>
                 <select name="category" id="select-category">
@@ -22,7 +22,7 @@ include_once 'header.php'
                     <option value="priceDesc">Precio descendente</option>
                 </select>
             </div>
-            <button type="submit" class="button-dark basic__button">Mostrar resultados</button>
+            <button type="submit" class="button-dark basic__button courses__filter">Mostrar resultados</button>
         </form>
     </div>
     <div class='products__container'>

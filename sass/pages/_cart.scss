@@ -4,63 +4,113 @@
   @extend %Dflex-col-center;
   width: 53%;
   padding: 2vw;
-  h1{
-      margin-top: 1vh;
-      margin-bottom: 1vh;
+  h1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
-  ul{
+  ul {
     margin-top: 1vh;
     margin-bottom: 1vh;
     list-style: none;
   }
-  .cart__product{
+  .cart__product {
     margin: 0.2vw;
     width: auto;
     @extend %DGrid-5;
-    .cart__product--item{
+    .cart__product--item {
       align-self: center;
     }
   }
-  .basic__button{
+  .basic__button {
     margin-top: 1vh;
   }
 }
-.price__container{
+.price__container {
   width: 20%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: right;
 }
-.form--payment, .pay__form__date, .pay__form__date__item{
+.form--payment,
+.pay__form__date,
+.pay__form__date__item {
   display: flex;
   flex-direction: column;
 }
-.form--payment{
+.form--payment {
   margin-top: 1vh;
   margin-bottom: 1vh;
   width: 53%;
-  label, input, .icon-container{
+  label,
+  input,
+  .icon-container {
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
   }
-  .icon-container{
+  .icon-container {
     width: 53%;
     @extend %Dflex-row-spbwt-center;
-    i{
+    i {
       font-size: 2em;
     }
   }
 }
-.order__cart{
-  h1{
+.order__cart {
+  h1 {
     margin-bottom: 2vh;
   }
-  span, h3{
+  span,
+  h3 {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
 }
-.banner__order{
+.banner__order {
   min-height: 75vh;
+}
+@media (max-width: 575.98px) {
+  .order__container {
+    width: 90%;
+    .cart__product {
+      margin-top: 2vh;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      padding: 1vh;
+      a {
+        display: none;
+      }
+      .cart__product--item {
+        width: 100%;
+      }
+      .product--teacher {
+        display: none;
+      }
+    }
+  }
+  .price__container {
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: {
+      top: 3vh;
+      bottom: 3vh;
+    }
+  }
+  .order__cart {
+    align-self: center;
+    padding: 4vh;
+    .form--payment {
+      width: 100%;
+      .icon-container {
+        width: 90%;
+        i {
+          font-size: 3em;
+        }
+      }
+    }
+  }
 }

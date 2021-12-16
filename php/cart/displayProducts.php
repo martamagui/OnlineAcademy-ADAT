@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && isset($_SESSION["cartID"])) {
         while ($row = $result->fetch_assoc()) {
             echo "<li><form class='cart__product ' action='php/deleteProduct.php?course=" . $row["courseID"] . "&cartId=" . $row["cartIDfk"] . "'  method='post'>";
             echo "<a href='' class='cart__product--item'><img src='img/" . $row["imgName"] . "' /></a>";
-            echo "<h4  class='cart__product--item'> " . $row["title"] . "</h4> <span  class='cart__product--item'> " . $row["teacher"] . "</span> <span  class='cart__product--item'>" . number_format((float)$row["price"], 2, '.', '') . " €</span>";
+            echo "<h4  class='cart__product--item'> " . $row["title"] . "</h4> <span  class='cart__product--item product--teacher'> " . $row["teacher"] . "</span> <span  class='cart__product--item'>" . number_format((float)$row["price"], 2, '.', '') . " €</span>";
             echo "<div  class='cart__product--item'><input type='submit' value='Eliminar' class='basic__button button-dark''/></div>";
             echo "</form></li>";
         }

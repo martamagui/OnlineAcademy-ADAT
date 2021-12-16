@@ -64,6 +64,9 @@ h2 {
   .banner__title {
     font-size: 1.7em;
   }
+  .cart__product--item h4 {
+    font-size: 1.3em;
+  }
 }
 
 /*Abstrac*/
@@ -247,7 +250,8 @@ main, .banner .banner__column, .login__form .form__container, .signup__form form
     min-height: 22vh;
     padding: 2vw;
   }
-  .product__card__info span, .product__card__info a {
+  .product__card__info span,
+  .product__card__info a {
     display: none;
   }
 }
@@ -564,6 +568,26 @@ main {
 }
 
 @media (max-width: 575.98px) {
+  .wrapper .courses__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .courses__form .courses__filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
   .products__container {
     -ms-grid-row-align: center;
         align-self: center;
@@ -574,7 +598,7 @@ main {
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1vw;
+    grid-gap: 2vh;
     padding: 2vw;
   }
 }
@@ -661,7 +685,9 @@ main {
           justify-content: right;
 }
 
-.form--payment, .pay__form__date, .pay__form__date__item {
+.form--payment,
+.pay__form__date,
+.pay__form__date__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,7 +703,9 @@ main {
   width: 53%;
 }
 
-.form--payment label, .form--payment input, .form--payment .icon-container {
+.form--payment label,
+.form--payment input,
+.form--payment .icon-container {
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
 }
@@ -694,13 +722,68 @@ main {
   margin-bottom: 2vh;
 }
 
-.order__cart span, .order__cart h3 {
+.order__cart span,
+.order__cart h3 {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
 
 .banner__order {
   min-height: 75vh;
+}
+
+@media (max-width: 575.98px) {
+  .order__container {
+    width: 90%;
+  }
+  .order__container .cart__product {
+    margin-top: 2vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    padding: 1vh;
+  }
+  .order__container .cart__product a {
+    display: none;
+  }
+  .order__container .cart__product .cart__product--item {
+    width: 100%;
+  }
+  .order__container .cart__product .product--teacher {
+    display: none;
+  }
+  .price__container {
+    width: 100%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .order__cart {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 4vh;
+  }
+  .order__cart .form--payment {
+    width: 100%;
+  }
+  .order__cart .form--payment .icon-container {
+    width: 90%;
+  }
+  .order__cart .form--payment .icon-container i {
+    font-size: 3em;
+  }
 }
 
 .detail__container {

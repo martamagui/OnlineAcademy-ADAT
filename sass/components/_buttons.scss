@@ -8,13 +8,15 @@
   min-width: 7vw;
   padding: 0.7vw;
 }
+
 #mail-btn {
   border-style: none;
   svg {
     transform: translateY(3px);
   }
 }
-@media (max-width: 575.98px){
+
+@media (max-width: 575.98px) {
   .banner__button {
     min-width: 25vw;
     padding: 2vw;
@@ -23,5 +25,4 @@
     min-width: 25vw;
     padding: 2vw;
   }
-  
 }

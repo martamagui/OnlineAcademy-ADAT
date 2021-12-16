@@ -30,25 +30,30 @@ h2 {
   font-size: 2.2em;
 }
 
-.product__card{
-  h2{
+.product__card {
+  h2 {
     font-size: 1.3em;
   }
 }
-.final--price{
+.final--price {
   font-size: 1.6em;
   font-weight: 600;
 }
 
-.detail__title{
+.detail__title {
   font-size: 2.5em;
 }
-.detail_rate{
+.detail_rate {
   font-size: 1.8em;
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
   .banner__title {
     font-size: 1.7em;
+  }
+  .cart__product--item {
+    h4 {
+      font-size: 1.3em;
+    }
   }
 }
