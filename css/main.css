@@ -372,8 +372,21 @@ input[type="text"]:focus {
   padding-bottom: 0.5vw;
 }
 
+@media (max-width: 991.98px) {
+  .collapse-submenu {
+    display: none;
+  }
+  .nav__item {
+    margin: 0px;
+    padding: 0px;
+  }
+  #nav-category {
+    display: none;
+  }
+}
+
 @media (max-width: 575.98px) {
-  #navName, #Greeting, .collapse-submenu {
+  #Greeting, .collapse-submenu {
     display: none;
   }
   .nav__item {
@@ -928,9 +941,9 @@ main {
 }
 
 /*Themes*/
-.footer,
-main {
-  background-color: #dddddd;
+html {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#aaaaaa));
+  background: linear-gradient(#dddddd 0%, #aaaaaa 100%);
 }
 
 .nav {
@@ -1010,10 +1023,6 @@ input:disabled {
   background-color: #a3a3a3;
 }
 
-#mail-btn {
-  background-color: #dddddd;
-}
-
 .collapse-submenu {
   background-color: #161616;
 }
@@ -1049,5 +1058,9 @@ input:disabled {
 .signup__form,
 .detail__container {
   background-color: #fff;
+}
+
+#mail-btn {
+  background-color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
-.footer,
-main {
+
+html {
   background: linear-gradient(
-    $profile__banner--bg1 0%,
-    $profile__banner--bg2 100%
+    $web-bg 0%,
+    $web-bg2 100%
   );
 }
 .nav {
@@ -73,10 +73,6 @@ input:disabled {
   background-color: $divider;
 }
 
-#mail-btn {
-  background-color: $web-bg;
-}
-
 .collapse-submenu {
   background-color: $nav__bg;
 }
@@ -112,4 +108,7 @@ input:disabled {
 .signup__form,
 .detail__container {
   background-color: $white;
+}
+#mail-btn{
+  background-color: rgba(255, 255, 255, 0);
 }
