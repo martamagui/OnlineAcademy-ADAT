@@ -27,6 +27,7 @@
         </div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 <script>
 		ScrollReveal().reveal('.product__card', { delay: 250 });
 </script>

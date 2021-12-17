@@ -47,9 +47,11 @@
   #nav-category {
     display: none;
   }
-  
 }
 @media (max-width: 575.98px){
+  #navName{
+    padding: 2vh;
+  }
   #Greeting, .collapse-submenu {
     display: none;
   }
