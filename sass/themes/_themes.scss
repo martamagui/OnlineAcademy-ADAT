@@ -1,6 +1,9 @@
 .footer,
 main {
-  background-color: $web-bg;
+  background: linear-gradient(
+    $profile__banner--bg1 0%,
+    $profile__banner--bg2 100%
+  );
 }
 .nav {
   background-color: $nav__bg;

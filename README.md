@@ -9,6 +9,7 @@ This is a E-comerce practice for class. I decided to create a Online-academy sin
 - Php
 - Sass
 - Js
+- ScrollReveal Js
 - HTML
 
 ## Todo list:
